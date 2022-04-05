@@ -521,3 +521,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .inline {
   display: inline;
 }
+
+.bg-violet-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity));
+}
