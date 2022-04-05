@@ -36,4 +36,9 @@
 
 /node_modules 
 
+# Les fichiers .DS_Store sont des fichiers qui se crée automatiquement sur les ordinateurs 
+# avec un système d'exploitation macOS. Celui-ci permet de mémoriser des attributs personnalisés du répertoire 
+# comme la présentation d'affichage des fichiers ou l'image des dossiers.
+# Il est préférable de les exclures pour éviter des problèmes dans les builds. 
 /app/*/.DS_Store
+/.DS_Store
