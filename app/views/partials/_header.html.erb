@@ -1,10 +1,27 @@
 <header class="header">
-    <div class="header__wrapper">
-        <div class="header__text"> 
-            <p>Hello</p>
-            <h1>Chez <span class="font-logo">share&change</span>,<br/> te faciliter la vie est notre priorité</h1> 
-            <p>C’est pour cela que nous nous engageons à trouver une solution à ton besoin, sans avoir à passer par quatre chemins.</p>
+    <div class="header__container">
+        <div class="header__wrapper">
+            <div class="header__text"> 
+                <p class="header__text__hello">Hello!</p>
+                <h1 class="header__text__title">Chez <span class="font-logo">share&change</span>, te 
+                <br/>
+                faciliter la vie est notre 
+                <br/>
+                priorité.</h1> 
+                <p class="header__text__paragraph">C’est pour cela que nous 
+                <br/>
+                nous engageons à trouver,
+                <br/> 
+                une solution à ton besoin,
+                <br/>
+                sans avoir à passer par 
+                <br/>
+                quatre chemins.
+                </p>
+            </div>
         </div>
-        <%= image_tag("jpg/desktop-header.jpg", alt:"Portrait d'une femme qui sourit") %>
+        <div class="header__image">
+            <%= image_tag("jpg/desktop-header.jpg", alt:"Portrait d'une femme qui sourit") %>
+        </div>
     </div>
 </header>

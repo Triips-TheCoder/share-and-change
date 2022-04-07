@@ -14,6 +14,7 @@
     --ff-logo: "Blatant";
     --fw-400: 400;
     --fw-700: 700;
+    --lh-paragraph: 1.5;
 }
 
 html {
@@ -35,6 +36,7 @@ button {
 p {
     font-family: var(--ff-sans-serif);
     font-weight: var(--fw-400);
+    line-height: var(--lh-paragraph);
 }
 
 h1 {
@@ -97,6 +99,36 @@ h1 {
 
 .nav__menu__line:nth-child(3) {
     bottom: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header__text__hello {
+    font-size: clamp(3.6rem, 5.5vw, 7rem);
+    font-style: italic;
+    font-family: var(--ff-title);
+}
+
+.header__text__title {
+    font-size: clamp(2.6rem, 1vw, 3.2rem);
+}
+
+.header__text__paragraph {
+    font-size: clamp(1.8rem, 1vw, 2.4rem);
+}
+
+.header__image img {
+    max-width: 100%;
 }
 
 
