@@ -6,12 +6,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "tailwind-build", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "normalize", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
     <%= javascript_importmap_tags %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
   </head>
-  <!-- npx tailwindcss -i app/assets/stylesheets/application.css -o app/assets/stylesheets/tailwind-build.css -->
   <body>
-    <%= render 'partials/header' %>
+  <main class="content">
+    <%= render 'partials/nav' %>
     <%= yield %>
     <%= render 'partials/footer' %>
   </body>
