@@ -11,7 +11,9 @@
     --white: #fff;
     --ff-title: "Work Sans";
     --ff-sans-serif: "Questrial";
-    --ff-logo: "Blatant"
+    --ff-logo: "Blatant";
+    --fw-400: 400;
+    --fw-700: 700;
 }
 
 html {
@@ -32,10 +34,15 @@ button {
 
 p {
     font-family: var(--ff-sans-serif);
+    font-weight: var(--fw-400);
 }
 
 h1 {
     font-family: var(--ff-title);
+}
+
+.font-logo {
+    font-family: "Blatant";
 }
 
 .nav__menu__accessibility {
@@ -57,8 +64,6 @@ h1 {
 
 .nav__logo {
     width: clamp(7.9rem, 16.6%, 20rem);
-
-
 }
 
 .nav__wrapper {
