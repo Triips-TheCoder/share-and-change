@@ -121,25 +121,12 @@ h1 {
 
 .header__text__title {
     font-size: clamp(2.6rem, 1vw, 3.2rem);
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
 }
 
 .header__text__paragraph {
     font-size: clamp(1.8rem, 1vw, 2.4rem);
 }
-
-.header__image {
-    background-image: url('jpg/desktop-header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@media (min-resolution: 192dpi) {
-    .header__image {
-        background-image: url('jpg@2x/desktop-header@2x.jpg');
-    }  
-}
-
-
 
 @media (max-width: 1050px) {
     .header__image {
