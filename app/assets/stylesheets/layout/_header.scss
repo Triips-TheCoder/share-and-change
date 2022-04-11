@@ -29,7 +29,7 @@
     font-family: "Blatant";
 }
 
-@include media('<desktop') {
+@media (max-width: 1050px) {
     .header__image {
         display: none;
     }
