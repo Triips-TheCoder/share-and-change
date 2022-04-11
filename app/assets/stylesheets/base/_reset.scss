@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+p {
+    font-family: var(--ff-sans-serif);
+    font-weight: var(--fw-400);
+    line-height: var(--lh-paragraph);
+}
+
+h1 {
+    font-family: var(--ff-title);
+}

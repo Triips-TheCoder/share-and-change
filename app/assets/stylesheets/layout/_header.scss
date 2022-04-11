@@ -1,0 +1,36 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header__text__hello {
+    font-size: clamp(3.6rem, 5.5vw, 7rem);
+    font-style: italic;
+    font-family: var(--ff-title);
+}
+
+.header__text__title {
+    font-size: clamp(2.6rem, 1vw, 3.2rem);
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
+}
+
+.header__text__paragraph {
+    font-size: clamp(1.8rem, 1vw, 2.4rem);
+}
+
+.font-logo {
+    font-family: "Blatant";
+}
+
+@include media('<desktop') {
+    .header__image {
+        display: none;
+    }
+}
