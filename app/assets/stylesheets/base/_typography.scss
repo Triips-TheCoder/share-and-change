@@ -11,6 +11,10 @@ p, a, address {
     line-height: var(--lh-paragraph);
 }
 
+a, address {
+    color: var(--white);
+}
+
 p {
     --min-p-font-size-rem : calc(var(--min-p-font-size) * 0.1rem);
     --max-p-font-size-rem: calc(var(--max-p-font-size) * 0.1rem);
@@ -48,8 +52,4 @@ h2 {
         var(--fluid-font-size-h2-rem),
         var(--max-h2-font-size-rem) 
     );
-}
-
-a, address {
-    color: var(--white);
 }
