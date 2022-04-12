@@ -1,0 +1,30 @@
+.quisommesnous__container {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-direction: column;
+}
+
+.quisommesnous__text__title {
+    font-size: clamp(2.6rem, 1vw, 3.2rem);
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
+}
+
+.quisommesnous__text__subhead{
+
+}
+
+.quisommesnous__text__paragraph {
+
+}
+
+.quisommesnous__wrapper__left{
+    align-items: flex-start;
+
+}
+
+.quisommesnous__wrapper__right{
+
+    align-items: flex-end;
+    text-align: end;
+}
