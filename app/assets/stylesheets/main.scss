@@ -2,10 +2,11 @@
 
 @import 'base/normalize';
 @import 'base/reset';
+@import 'base/fonts';
 @import 'base/typography';
 
 @import "components/logo";
-
+@import "components/button";
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/navigation';

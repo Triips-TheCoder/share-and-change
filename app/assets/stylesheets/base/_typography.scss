@@ -1,7 +1,55 @@
-@font-face {
-    font-family: 'Blatant';
-    src: url('assets/blatant.woff2'),
-         url('assets/blatant.woff');
-    font-style: normal;
-    font-display: swap;
+
+
+h1 {
+    font-family: var(--ff-title);  
+}
+
+p, a, address {
+    font-family: var(--ff-sans-serif);
+    font-weight: var(--fw-400);
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    line-height: var(--lh-paragraph);
+}
+
+p {
+    --min-p-font-size-rem : calc(var(--min-p-font-size) * 0.1rem);
+    --max-p-font-size-rem: calc(var(--max-p-font-size) * 0.1rem);
+    --fluid-font-size-p-rem: calc( 
+    var(--slope-p) * (100vw - var(--min-vw-rem)) + var(--min-p-font-size-rem) 
+  );
+  font-size: clamp( 
+    var(--min-p-font-size-rem), 
+    var(--fluid-font-size-p-rem), 
+    var(--max-p-font-size-rem) 
+  ); 
+}
+
+h1 {
+    --min-h1-font-size-rem: calc(var(--min-h1-font-size) * 0.1rem);
+    --max-h1-font-size-rem: calc(var(--max-h1-font-size) * 0.1rem);
+    --fluid-font-size-h1-rem: calc(
+        var(--slope-h1) * (100vw - var(--min-vw-rem)) + var(--min-h1-font-size-rem)
+    );
+    font-size: clamp(
+        var(--min-h1-font-size-rem),
+        var(--fluid-font-size-h1-rem),
+        var(--max-h1-font-size-rem)
+    );
+}
+
+h2 {
+    --min-h2-font-size-rem: calc(var(--min-h2-font-size) * 0.1rem);
+    --max-h2-font-size-rem: calc(var(--max-h2-font-size) * 0.1rem);
+    --fluid-font-size-h2-rem: calc(
+        var(--slope-h2) * (100vw - var(--min-vw-rem)) + var(--min-h2-font-size-rem)
+    );
+    font-size: clamp(
+        var(--min-h2-font-size-rem),
+        var(--fluid-font-size-h2-rem),
+        var(--max-h2-font-size-rem) 
+    );
+}
+
+a, address {
+    color: var(--white);
 }
