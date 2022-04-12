@@ -1,1 +1,39 @@
-<footer class="fixed bottom-0">Je suis le footer</footer>
+<footer class="footer">
+    <div class="footer__container">
+        <%= image_tag("logo-white.svg", alt: "logo share and change en blanc", class:"logo footer__logo-white")%>
+        <div class="footer__wrapper">
+            <div class="footer__links">
+                <%= link_to "Accueil"%>
+                <br/>
+                <%= link_to "Les aides"%>
+                <br/>
+                <%= link_to "Qui sommes-nous ?"%>
+            </div>
+
+            <div class="footer__contact">
+                <address class="footer__address">
+                    <p class="footer__address__contact">Contact :</p>
+                    33800 Bordeaux<br/>
+                    <a href="+33622905439">+33622905439</a><br/>
+                    <a href="shareandchange33@gmail.com">shareandchange33@gmail.com</a>
+                </address>
+            </div>
+        </div>    
+
+        <!-- CGU  / Mention Legale / -->
+
+        <div class="footer__cgu">
+            <span class="footer__cgu__links">
+                <%= link_to "Mentions légales" %>
+            </span>
+            <span class="footer__cgu__links">
+                <a href="#">©2022 share&change,<br/>
+                Tous droits réservés.
+                </a>
+            </span>
+            <span class="footer__cgu__links">
+                <%= link_to "CGU" %>
+            </span>
+        </div>
+    </div>
+</footer>

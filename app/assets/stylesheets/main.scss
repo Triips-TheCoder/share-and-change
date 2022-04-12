@@ -4,7 +4,10 @@
 @import 'base/reset';
 @import 'base/typography';
 
+@import "components/logo";
+
 @import 'layout/header';
+@import 'layout/footer';
 @import 'layout/navigation';
 
 @import 'pages/home';
