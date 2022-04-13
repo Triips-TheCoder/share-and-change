@@ -1,16 +1,15 @@
-<h1><%= @capsule %></h1>
+<section class="media">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/<%= @capsule.video %>?h=b260a3b1b0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="content">
+  <blockquote><p><%= @capsule %></p></blockquote>
+  <h1><%= @capsule.first_name %></h1>
+  <p>Nous parle de <%= @capsule.charity %></p>
+</section>
+
 <p><%= link_to @capsule.charity, @capsule.charity %></p>
 <p><%= link_to @capsule.need, @capsule.need %></p>
-
-
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/<%= @capsule.video %>?h=b260a3b1b0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</div>
 <script src="https://player.vimeo.com/api/player.js"></script>
-
-<%= @capsule.poster %>
-
-<p>
-  <%= @capsule.first_name %>
-  <%= @capsule.last_name %>
-</p>
