@@ -15,13 +15,17 @@
     --min-h2-font-size: 25;
     --max-h2-font-size: 40;
     --min-p-font-size: 15;
-    --max-p-font-size: 24; 
+    --max-p-font-size: 24;
     --run: calc(var(--max-vw) - var(--min-vw));
     --rise-h1: calc(var(--max-h1-font-size) - var(--min-h1-font-size));
-    --rise-h2: calc(var(--max-h2-font-size) - var(--min-h2-font-size)); 
-    --rise-p: calc(var(--max-p-font-size) - var(--min-p-font-size)); 
+    --rise-h2: calc(var(--max-h2-font-size) - var(--min-h2-font-size));
+    --rise-p: calc(var(--max-p-font-size) - var(--min-p-font-size));
     --slope-h1: calc(var(--rise-h1) / var(--run));
     --slope-h2: calc(var(--rise-h2) / var(--run));
-    --slope-p : calc(var(--rise-p) / var(--run)); 
+    --slope-p : calc(var(--rise-p) / var(--run));
     --min-vw-rem : calc(var(--min-vw) * 0.1rem);
+
+    --grid-columns: 12
+    --grid-gutter-width: px2rem(10)
+    --gutter: px2rem(30)
 }
