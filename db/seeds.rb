@@ -8,9 +8,11 @@
 
 alimentation = Need.where(name: 'Alimentation').first_or_create
 emploi = Need.where(name: 'Emploi').first_or_create
+formation = Need.where(name: '')
 
 secours_pop = Charity.where(name: 'Secours Populaire').first_or_create
 
 capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
 capsule.first_name = 'Palla'
+capsule.video = '699029249'
 capsule.save
