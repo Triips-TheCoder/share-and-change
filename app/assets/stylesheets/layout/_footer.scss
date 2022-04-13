@@ -8,6 +8,10 @@
     background-color: var(--black-variant);
     padding: clamp(2.3rem, 3.4vw, 4.3rem) clamp(2rem, 3.1vw, 3.9rem);
 
+    &__logo {
+        margin-bottom: clamp(6rem, 13.4vw, 17rem);
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -27,25 +31,46 @@
         font-family: var(--ff-title);
     }
 
-    &__cgu {
+    &__rights {
         display: flex;
         justify-content: space-between;
+        opacity: 0.5;
+        color: var(--white); 
     }
 
-    &__cgu a {
-        opacity: 0.5;
+    &__rights a {
         width: 100%;
     }    
     
-    &__cgu__links a {
+    &__rights__links a,
+    &__rights__links p {
         font-size: clamp(0.8rem, 1.6vw, 2rem);
     }
 
-    &__cgu__links:nth-child(2) {
+    &__rights__links:nth-child(2) {
         text-align: center;
+
+        & p {
+          margin: 0; 
+        }
     }
 
     &__address {
         margin-bottom: clamp(6.2rem, 12.8vw, 16.3rem);
+        //transform: translateY(-63%);
+
+        &__mail {
+            position: relative;
+        }
+
+        &__mail::after {
+            content: "";
+            position: absolute; 
+            bottom: 0;
+            left: 0;
+            background-color: var(--white);
+            height: 1px;
+            width: 100%;    
+        }
     }
 }
