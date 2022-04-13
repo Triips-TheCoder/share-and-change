@@ -15,6 +15,7 @@ class CharitiesTest < ApplicationSystemTestCase
     click_on "New charity"
 
     fill_in "Adress", with: @charity.adress
+    fill_in "Catchphrase", with: @charity.catchphrase
     fill_in "City", with: @charity.city
     fill_in "Country", with: @charity.country
     fill_in "Description", with: @charity.description
@@ -35,6 +36,7 @@ class CharitiesTest < ApplicationSystemTestCase
     click_on "Edit this charity", match: :first
 
     fill_in "Adress", with: @charity.adress
+    fill_in "Catchphrase", with: @charity.catchphrase
     fill_in "City", with: @charity.city
     fill_in "Country", with: @charity.country
     fill_in "Description", with: @charity.description
