@@ -52,4 +52,3 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_12_094441) do
   add_foreign_key "capsules", "charities"
   add_foreign_key "capsules", "needs"
 end
-
