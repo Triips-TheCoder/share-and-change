@@ -15,6 +15,17 @@ sante = Need.where(name: 'Santé').first_or_create
 
 secours_pop = Charity.where(name: 'Secours Populaire').first_or_create
 
+singa = Charity.where(name: 'Singa').first_or_create
+singa.description = "“Créer la société de demain”, c’est ainsi que Singa crée une communauté autour de la diversité humaine. Que vous soyez réfugié, demandeur d’asile, une personne local ou bien immigrant, l’insertion social est à porté de main. Singa vous apporte de nombreuses ressources et opportunités dans le but de fonder un réel réseau culturel, professionnel ou encore dans la recherche de logement. Depuis sa création en 2012, les statistiques de Singa prouve que l’innovation social et culturel germe de la création des liens et des réfugiés."
+singa.catchphrase = "Les talents ne s’arrêtent pas aux frontières."
+singa.phone = "06 17 80 24 55"
+singa.email = "contact@singa.fr"
+singa.adress = "87 Quai des Queyries"
+singa.website = "singafrance.com"
+singa.country = "France"
+singa.city = "Bordeaux"
+singa.zipcode = "33100"
+
 capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
