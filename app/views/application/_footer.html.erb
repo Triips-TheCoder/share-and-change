@@ -2,7 +2,7 @@
     <div class="footer__container">
         <%= image_tag("logo-white.svg", alt: "logo share and change en blanc", class:"logo footer__logo")%>
         <div class="footer__wrapper">
-            <%= render 'partials/nav'%>
+            <%= render 'nav'%>
 
             <div class="footer__contact">
                 <address class="footer__address">
@@ -12,14 +12,14 @@
                     <a title="shareandchange33@gmail.com - lien externe" target="_blank" class="footer__address__mail" href="mailto:shareandchange33@gmail.com">shareandchange33@gmail.com</a>
                 </address>
             </div>
-        </div>    
+        </div>
 
         <!-- CGU  / Mention Legale -->
 
         <!-- renommer rights / bottom-->
         <div class="footer__rights">
             <span class="footer__rights__links">
-                <%= link_to "Mentions légales", "/pages/mentionslegales" %>
+                <%= link_to "Mentions légales", mentions_legales_path %>
             </span>
             <span class="footer__rights__links">
                 <p>©2022 share&change,<br/>
@@ -27,7 +27,7 @@
                 </p>
             </span>
             <span class="footer__rights__links">
-                <%= link_to "CGU", "/pages/cgu" %>
+                <%= link_to "CGU", cgu_path %>
             </span>
         </div>
     </div>
