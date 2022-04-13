@@ -6,18 +6,17 @@
         > * {
             position: absolute;
         }
-        video {
+        img {
             bottom: 0;
             left: 0;
             object-fit: cover;
             right: 0;
             top: 0;
         }
-        video + p {
+        img + p {
             left: var(--gutter);
             top: var(--gutter);
         }
-
         blockquote {
             bottom: var(--gutter);
             left: var(--gutter);

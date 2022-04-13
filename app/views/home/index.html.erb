@@ -25,9 +25,11 @@
 
 <section>
     <h2>Nos derniers témoignages</h2>
-    <% @capsules.each do |capsule| %>
-      <%= render capsule %>
-    <% end %>
+    <div class="capsules">
+      <% @capsules.each do |capsule| %>
+        <%= render capsule %>
+      <% end %>
+    </div>
 </section>
 
 <section>
