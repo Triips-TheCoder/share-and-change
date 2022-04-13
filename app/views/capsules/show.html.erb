@@ -1,24 +1,11 @@
 <h1><%= @capsule %></h1>
-<p>
-  <%= @capsule.charity %>
-</p>
+<p><%= @capsule.charity %></p>
+<p><%= link_to @capsule.need, @capsule.need %></p>
 
-<p>
-  <%= link_to @capsule.need, @capsule.need %>
-</p>
-
-<p>
-  <%= @capsule.video %>
-</p>
-
-<p>
-  <%= @capsule.poster %>
-</p>
+<%= @capsule.video %>
+<%= @capsule.poster %>
 
 <p>
   <%= @capsule.first_name %>
-</p>
-
-<p>
   <%= @capsule.last_name %>
 </p>
