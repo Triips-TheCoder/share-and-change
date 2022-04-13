@@ -2,15 +2,16 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: calc(100% - clamp(2rem, 6.4vw, 8rem));
-    margin: clamp(3.8rem, 4.4vw, 5.6rem) auto 0 auto;
+    width: calc(100% - clamp(1.25rem, 6.4vw, 5rem));
+    margin: clamp(pxToRem(38), 4.4vw,pxToRem(56)) auto 0 auto;
+    z-index: var(--zindex-header);
 }
 
 .header__menu {
     position: relative;
-    width: clamp(2rem, 2.4vw, 3rem);
+    width: clamp(pxToRem(20), 2.4vw, pxToRem(30));
     height: 2rem;
-    margin-left: clamp(3rem, 5.4vw, 6.9rem);
+    margin-left: clamp(pxToRem(30), 5.4vw, pxToRem(69));
 }
 
 .header__menu__line {
