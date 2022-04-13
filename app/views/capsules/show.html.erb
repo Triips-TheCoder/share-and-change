@@ -1,10 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<h1><%= @capsule %></h1>
+<p><%= @capsule.charity %></p>
+<p><%= link_to @capsule.need, @capsule.need %></p>
 
-<%= render @capsule %>
+<%= @capsule.video %>
+<%= @capsule.poster %>
 
-<div>
-  <%= link_to "Edit this capsule", edit_capsule_path(@capsule) %> |
-  <%= link_to "Back to capsules", capsules_path %>
-
-  <%= button_to "Destroy this capsule", @capsule, method: :delete %>
-</div>
+<p>
+  <%= @capsule.first_name %>
+  <%= @capsule.last_name %>
+</p>
