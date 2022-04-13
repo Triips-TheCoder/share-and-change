@@ -1,7 +1,7 @@
 <article class="capsule">
     <%= link_to capsule do %>
         <div>
-        <%= image_tag capsule.poster unless capsule.poster.blank? %>
+            <%= image_tag capsule.poster unless capsule.poster.blank? %>
             <p>Voir la vidéo</p>
             <blockquote>
               <p><%= capsule.quote %></p>
@@ -9,7 +9,7 @@
         </div>
         <figcaption>
           <h3><%= capsule.first_name %></h3>
-          <p>nous parle de Singa</p>
+          <p>nous parle de <%= @capsule.charity %></p>
         </figcaption>
     <% end %>
 </article>
