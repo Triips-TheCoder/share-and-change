@@ -1,14 +1,5 @@
-<p style="color: green"><%= notice %></p>
+<h1>Besoins</h1>
 
-<h1>Needs</h1>
-
-<div id="needs">
-  <% @needs.each do |need| %>
-    <%= render need %>
-    <p>
-      <%= link_to "Show this need", need %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New need", new_need_path %>
+<% @needs.each do |need| %>
+  <%= link_to need, need %>
+<% end %>
