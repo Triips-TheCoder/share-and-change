@@ -1,0 +1,26 @@
+.testimonial {
+    div {
+        margin-bottom: var(--gutter);
+        padding-top: 150%;
+        position: relative;
+        > * {
+            position: absolute;
+        }
+        video {
+            bottom: 0;
+            left: 0;
+            object-fit: cover
+            right: 0;
+            top: 0;
+        }
+        video + p {
+            left: var(--gutter);
+            top: var(--gutter);
+        }
+
+        blockquote {
+            bottom: var(--gutter);
+            left: var(--gutter);
+        }
+    }
+}

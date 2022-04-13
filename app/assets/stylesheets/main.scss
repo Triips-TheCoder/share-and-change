@@ -6,9 +6,11 @@
 @import 'base/typography';
 
 @import "components/button";
+@import "components/container";
 @import "components/hero";
 @import "components/logo";
 @import "components/menu";
+@import "components/testimonial";
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -16,5 +18,3 @@
 
 @import 'pages/home';
 @import 'pages/quisommesnous';
-
-
