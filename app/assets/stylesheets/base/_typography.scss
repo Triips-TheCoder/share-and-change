@@ -7,7 +7,7 @@ h1 {
 p, a, address {
     font-family: var(--ff-sans-serif);
     font-weight: var(--fw-400);
-    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-size: clamp(pxToRem(18), 2vw, pxToRem(25));
     line-height: var(--lh-paragraph);
 }
 
@@ -16,8 +16,8 @@ a, address {
 }
 
 p {
-    --min-p-font-size-rem : calc(var(--min-p-font-size) * 0.1rem);
-    --max-p-font-size-rem: calc(var(--max-p-font-size) * 0.1rem);
+    --min-p-font-size-rem : calc(var(--min-p-font-size) * var(--one-pixel-rem));
+    --max-p-font-size-rem: calc(var(--max-p-font-size) * var(--one-pixel-rem));
     --fluid-font-size-p-rem: calc( 
     var(--slope-p) * (100vw - var(--min-vw-rem)) + var(--min-p-font-size-rem) 
   );
@@ -29,8 +29,8 @@ p {
 }
 
 h1 {
-    --min-h1-font-size-rem: calc(var(--min-h1-font-size) * 0.1rem);
-    --max-h1-font-size-rem: calc(var(--max-h1-font-size) * 0.1rem);
+    --min-h1-font-size-rem: calc(var(--min-h1-font-size) * var(--one-pixel-rem));
+    --max-h1-font-size-rem: calc(var(--max-h1-font-size) * var(--one-pixel-rem));
     --fluid-font-size-h1-rem: calc(
         var(--slope-h1) * (100vw - var(--min-vw-rem)) + var(--min-h1-font-size-rem)
     );
@@ -42,8 +42,8 @@ h1 {
 }
 
 h2 {
-    --min-h2-font-size-rem: calc(var(--min-h2-font-size) * 0.1rem);
-    --max-h2-font-size-rem: calc(var(--max-h2-font-size) * 0.1rem);
+    --min-h2-font-size-rem: calc(var(--min-h2-font-size) * var(--one-pixel-rem));
+    --max-h2-font-size-rem: calc(var(--max-h2-font-size) * var(--one-pixel-rem));
     --fluid-font-size-h2-rem: calc(
         var(--slope-h2) * (100vw - var(--min-vw-rem)) + var(--min-h2-font-size-rem)
     );
@@ -52,4 +52,8 @@ h2 {
         var(--fluid-font-size-h2-rem),
         var(--max-h2-font-size-rem) 
     );
+}
+
+.font-logo {
+    font-family: "Blatant";
 }

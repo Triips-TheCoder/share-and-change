@@ -1,1 +1,26 @@
-<%= render 'partials/header' %>
+<div class="hero">
+    <div class="hero__container">
+        <div class="hero__content">
+            <div class="hero__text"> 
+                <p class="hero__text__hello">Hello!</p>
+                <h1 class="hero__text__title">Chez <span class="font-logo">share&change</span>,&nbspte 
+                <br/>
+                faciliter la vie est notre 
+                <br/>
+                priorité.</h1> 
+                <p>C’est pour cela que nous 
+                nous engageons à trouver,
+                une solution à ton besoin,
+                sans avoir à passer par 
+                quatre chemins.
+                </p>
+            </div>
+        </div>
+        <div class="hero__image">
+            <%= image_tag(
+                "jpg/desktop-header.jpg", 
+            alt:"", 
+            srcset:"/assets/jpeg@2x/desktop-header@2x.jpeg 2x") %>
+        </div>
+    </div>
+</header>

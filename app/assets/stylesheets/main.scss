@@ -1,3 +1,4 @@
+@import 'abstracts/functions';
 @import 'abstracts/variables';
 
 @import 'base/normalize';
@@ -5,8 +6,11 @@
 @import 'base/fonts';
 @import 'base/typography';
 
-@import "components/logo";
 @import "components/button";
+@import "components/hero";
+@import "components/logo";
+@import "components/menu";
+
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/navigation';
