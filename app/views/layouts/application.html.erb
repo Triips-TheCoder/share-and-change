@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
-    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/js/splide.min.js"></script>
   </head>
   <body>
-  <main class="content">
-    <%= render 'partials/nav' %>
-    <%= yield %>
+    <main role="main">
+      <%= yield %>
+      </main>
     <%= render 'partials/footer' %>
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/js/splide.min.js"></script>  
   </body>
 </html>

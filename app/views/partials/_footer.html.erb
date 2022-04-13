@@ -1,37 +1,33 @@
-<footer class="footer">
+<footer class="footer" role="contentinfo">
     <div class="footer__container">
-        <%= image_tag("logo-white.svg", alt: "logo share and change en blanc", class:"logo footer__logo-white")%>
+        <%= image_tag("logo-white.svg", alt: "logo share and change en blanc", class:"logo footer__logo")%>
         <div class="footer__wrapper">
-            <div class="footer__links">
-                <%= link_to "Accueil"%>
-                <br/>
-                <%= link_to "Les aides"%>
-                <br/>
-                <%= link_to "Qui sommes-nous ?" %>
-            </div>
+            <%= render 'partials/nav'%>
 
             <div class="footer__contact">
                 <address class="footer__address">
                     <p class="footer__address__contact">Contact :</p>
-                    33800 Bordeaux<br/>
+                    33800 Bordeaux, France
+                    <br/>
                     <a href="tel:+33622905439">+33622905439</a><br/>
-                    <a class="footer__address__mail" href="mailto:shareandchange33@gmail.com">shareandchange33@gmail.com</a>
+                    <a title="shareandchange33@gmail.com - lien externe" target="_blank" class="footer__address__mail" href="mailto:shareandchange33@gmail.com">shareandchange33@gmail.com</a>
                 </address>
             </div>
         </div>    
 
-        <!-- CGU  / Mention Legale / -->
+        <!-- CGU  / Mention Legale -->
 
-        <div class="footer__cgu">
-            <span class="footer__cgu__links">
+        <!-- renommer rights / bottom-->
+        <div class="footer__rights">
+            <span class="footer__rights__links">
                 <%= link_to "Mentions légales" %>
             </span>
-            <span class="footer__cgu__links">
-                <a href="#">©2022 share&change,<br/>
+            <span class="footer__rights__links">
+                <p>©2022 share&change,<br/>
                 Tous droits réservés.
-                </a>
+                </p>
             </span>
-            <span class="footer__cgu__links">
+            <span class="footer__rights__links">
                 <%= link_to "CGU" %>
             </span>
         </div>

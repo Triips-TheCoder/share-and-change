@@ -1,21 +1,26 @@
 <header class="header">
+    <div class="header__navigation">
+    <%= image_tag("logo-black.svg", alt:"logo de share and change en noir", class:"logo") %>
+    <button class="header__menu">
+        <div class="header__menu__line"></div>
+        <div class="header__menu__line"></div>
+        <div class="header__menu__line"></div>
+    </button> 
+    <!-- <%= image_tag("france-flag.svg", alt:"France", class:"nav__lang")%> -->
+    </div>
     <div class="header__container">
         <div class="header__wrapper">
             <div class="header__text"> 
                 <p class="header__text__hello">Hello!</p>
-                <h1 class="header__text__title">Chez <span class="font-logo">share&change</span>, te 
+                <h1 class="header__text__title">Chez <span class="font-logo">share&change</span>,&nbspte 
                 <br/>
                 faciliter la vie est notre 
                 <br/>
                 priorité.</h1> 
                 <p>C’est pour cela que nous 
-                <br/>
                 nous engageons à trouver,
-                <br/> 
                 une solution à ton besoin,
-                <br/>
                 sans avoir à passer par 
-                <br/>
                 quatre chemins.
                 </p>
             </div>
@@ -23,7 +28,7 @@
         <div class="header__image">
             <%= image_tag(
                 "jpg/desktop-header.jpg", 
-            alt:"Portrait d'une femme qui sourit", 
+            alt:"", 
             srcset:"assets/jpeg@2x/desktop-header@2x.jpeg 2x") %>
         </div>
     </div>
