@@ -1,2 +1,14 @@
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/<%= capsule.video %>?h=b260a3b1b0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<%= link_to capsule.quote, capsule %>
+<article class="capsule">
+    <%= link_to capsule do %>
+        <div>
+            <p>Voir la vidéo</p>
+            <blockquote>
+              <p><%= capsule.quote %></p>
+            </blockquote>
+        </div>
+        <figcaption>
+          <h3><%= capsule.first_name %></h3>
+          <p>nous parle de Singa</p>
+        </figcaption>
+    <% end %>
+</article>
