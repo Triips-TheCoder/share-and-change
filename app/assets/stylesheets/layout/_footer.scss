@@ -12,6 +12,10 @@
     address {
         color: var(--white);
     }
+
+    address {
+        text-align: right;
+    }
     
     &__logo {
         margin-bottom: clamp(pxToRem(60), 13.4vw, pxToRem(170));
