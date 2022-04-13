@@ -7,7 +7,12 @@
     align-items: center;
     background-color: var(--black-variant);
     padding: clamp(pxToRem(23), 3.4vw, pxToRem(43)) clamp(pxToRem(20), 3.1vw, pxToRem(39));
-
+    
+    a,
+    address {
+        color: var(--white);
+    }
+    
     &__logo {
         margin-bottom: clamp(pxToRem(60), 13.4vw, pxToRem(170));
     }

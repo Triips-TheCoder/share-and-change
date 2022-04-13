@@ -8,10 +8,9 @@
 }
 
 .header__menu {
+    height: pxToRem(20);
     position: relative;
     width: clamp(pxToRem(20), 2.4vw, pxToRem(30));
-    height: 2rem;
-    margin-left: clamp(pxToRem(30), 5.4vw, pxToRem(69));
 }
 
 .header__menu__line {
