@@ -10,38 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_12_094441) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_13_133920) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "capsules", force: :cascade do |t|
-    t.bigint "charity_id", null: false
-    t.bigint "need_id", null: false
-    t.text "video"
-    t.string "quote"
-    t.text "poster"
-    t.string "first_name"
-    t.string "last_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["charity_id"], name: "index_capsules_on_charity_id"
-    t.index ["need_id"], name: "index_capsules_on_need_id"
-  end
-
-  create_table "charities", force: :cascade do |t|
-    t.string "logo"
-    t.text "description"
-    t.string "phone"
-    t.string "email"
-    t.text "website"
-    t.text "adress"
-    t.string "zipcode"
-    t.string "city"
-    t.string "country"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "needs", force: :cascade do |t|
     t.string "name"
@@ -49,6 +20,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_12_094441) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "capsules", "charities"
-  add_foreign_key "capsules", "needs"
 end
