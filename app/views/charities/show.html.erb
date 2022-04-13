@@ -1,10 +1,5 @@
-<p style="color: green"><%= notice %></p>
+<h1><%= @charity %></h1>
 
-<%= render @charity %>
-
-<div>
-  <%= link_to "Edit this charity", edit_charity_path(@charity) %> |
-  <%= link_to "Back to charities", charities_path %>
-
-  <%= button_to "Destroy this charity", @charity, method: :delete %>
-</div>
+<% @charity.capsules.each do |capsule| %>
+  <%= render capsule %>
+<% end %>
