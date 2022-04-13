@@ -1,48 +1,58 @@
-<section class="hero">
-    <div class="hero__container">
-        <div class="hero__content">
-            <div class="hero__text">
-                <p class="hero__text__hello">Hello!</p>
-                <h1 class="hero__text__title">
-                  Chez <span class="font-logo">share&change</span>,
-                  faciliter la vie est notre priorité.
-                </h1>
-                <p>C’est pour cela que nous
-                nous engageons à trouver,
-                une solution à ton besoin,
-                sans avoir à passer par
-                quatre chemins.
-                </p>
+<div class="row">
+    <div class="offset-md-1 col-md-10">
+
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <p class="hero__text__hello">Hello!</p>
+                        <h1 class="hero__text__title">
+                          Chez <span class="font-logo">share&change</span>,
+                          faciliter la vie est notre priorité.
+                        </h1>
+                        <p>C’est pour cela que nous
+                        nous engageons à trouver,
+                        une solution à ton besoin,
+                        sans avoir à passer par
+                        quatre chemins.
+                        </p>
+                    </div>
+                </div>
+                <div class="hero__image">
+                  <%= image_tag "jpg/desktop-header.jpg",
+                                alt:"",
+                                srcset:"/assets/jpeg@2x/desktop-header@2x.jpeg 2x" %>
+                </div>
             </div>
-        </div>
-        <div class="hero__image">
-          <%= image_tag "jpg/desktop-header.jpg",
-                        alt:"",
-                        srcset:"/assets/jpeg@2x/desktop-header@2x.jpeg 2x" %>
-        </div>
+        </section>
+
+        <section>
+            <h2>Nos derniers témoignages</h2>
+            <div class="capsules">
+              <% @capsules.each do |capsule| %>
+                <%= render capsule %>
+              <% end %>
+            </div>
+        </section>
+
+        <section>
+            <h2>Chaque histoire mérite d’être partagée</h2>
+        </section>
+
+        <section>
+            <h2>Nous leur faisons confiance</h2>
+            <p>Nous travaillons en étroite collaboration avec des associations, organisations et entreprises mettant en oeuvre des moyens pour accélérer et faciliter l’intégration des réfugiés à l’échelle régionale mais également nationale.</p>
+            <div class="charities">
+              <% @charities.each do |charity| %>
+                <%= link_to charity, charity %>
+              <% end %>
+            </div>
+        </section>
+
+        <section>
+            <h2>Envie de nous rejoindre ou de témoigner ?</h2>
+            <p>Nous travaillons en étroite collaboration avec des associations, organisations et entreprises mettant en oeuvre des moyens pour accélérer et faciliter l’intégration des réfugiés à l’échelle régionale mais également nationale.</p>
+        </section>
+
     </div>
-</section>
-
-<section>
-    <h2>Nos derniers témoignages</h2>
-    <div class="capsules">
-      <% @capsules.each do |capsule| %>
-        <%= render capsule %>
-      <% end %>
-    </div>
-</section>
-<section>
-    <h2>Chaque histoire mérite d’être partagée</h2>
-</section>
-
-<section>
-    <h2>Nous leur faisons confiance</h2>
-    <% @charities.each do |charity| %>
-  <%= link_to charity, charity %>
-<% end %>
-</section>
-
-<section>
-    <h2>Envie de nous rejoindre ou de témoigner ?</h2>
-    <p>Nous travaillons en étroite collaboration avec des associations, organisations et entreprises mettant en oeuvre des moyens pour accélérer et faciliter l’intégration des réfugiés à l’échelle régionale mais également nationale.</p>
-</section>
+</div>
