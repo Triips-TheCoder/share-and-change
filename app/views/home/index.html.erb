@@ -3,11 +3,10 @@
         <div class="hero__content">
             <div class="hero__text">
                 <p class="hero__text__hello">Hello!</p>
-                <h1 class="hero__text__title">Chez <span class="font-logo">share&change</span>,&nbspte
-                <br/>
-                faciliter la vie est notre
-                <br/>
-                priorité.</h1>
+                <h1 class="hero__text__title">
+                  Chez <span class="font-logo">share&change</span>,
+                  faciliter la vie est notre priorité.
+                </h1>
                 <p>C’est pour cela que nous
                 nous engageons à trouver,
                 une solution à ton besoin,
@@ -27,6 +26,10 @@
 
 <section>
     <h2>Nos derniers témoignages</h2>
+    <% @capsules.each do |capsule| %>
+      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/<%= capsule.video %>?h=b260a3b1b0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <%= link_to capsule.quote, capsule %>
+    <% end %>
 </section>
 
 <section>
