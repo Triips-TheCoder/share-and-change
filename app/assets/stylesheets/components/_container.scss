@@ -20,3 +20,23 @@
         max-width: 1320px;
     }
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-.5 * var(--grid-gutter-width));
+    margin-left: calc(-.5 * var(--grid-gutter-width));
+    > * {
+        padding-right: calc(var(--grid-gutter-width) * .5);
+        padding-left: calc(var(--grid-gutter-width) * .5);
+    }
+}
+
+@media (min-width: 768px) {
+    .offset-md-1 {
+        margin-left: var(--col);
+    }
+    .col-md-10 {
+        width: calc(var(--col) * 10);
+    }
+}

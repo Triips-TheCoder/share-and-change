@@ -15,7 +15,7 @@
     --min-h2-font-size: 25;
     --max-h2-font-size: 40;
     --min-p-font-size: 15;
-    --max-p-font-size: 24; 
+    --max-p-font-size: 24;
     --one-pixel-rem: 0.0625rem;
     --run: calc(var(--max-vw) - var(--min-vw));
     --rise-h1: calc(var(--max-h1-font-size) - var(--min-h1-font-size));
@@ -28,7 +28,8 @@
     --zindex-menu: 1;
     --zindex-header: 2;
 
-    --grid-columns: 12
-    --grid-gutter-width: pxToRem(10)
-    --gutter: pxToRem(30)
+    --grid-columns: 12;
+    --grid-gutter-width: pxToRem(10);
+    --gutter: pxToRem(30);
+    --col: 8.33333333%;
 }
