@@ -1,12 +1,5 @@
 <h1>Les associations</h1>
 
-<div id="charities">
-  <% @charities.each do |charity| %>
-    <%= render charity %>
-    <p>
-      <%= link_to "Show this charity", charity %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New charity", new_charity_path %>
+<% @charities.each do |charity| %>
+  <%= link_to charity, charity %>
+<% end %>
