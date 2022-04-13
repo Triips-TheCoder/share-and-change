@@ -31,13 +31,15 @@
       <% end %>
     </div>
 </section>
-
 <section>
     <h2>Chaque histoire mérite d’être partagée</h2>
 </section>
 
 <section>
     <h2>Nous leur faisons confiance</h2>
+    <% @charities.each do |charity| %>
+  <%= link_to charity, charity %>
+<% end %>
 </section>
 
 <section>
