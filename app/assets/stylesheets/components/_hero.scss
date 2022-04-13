@@ -11,19 +11,19 @@
 }
 
 .hero__text {
-    max-width: 75rem;
-    padding: 0 clamp(2.5rem, 4vw, 5rem);
+    max-width: pxToRem(750);
+    padding: 0 clamp(pxToRem(25), 4vw, pxToRem(50));
 }
 
 .hero__text__hello {
-    font-size: clamp(3.6rem, 5.5vw, 7rem);
+    font-size: clamp(pxToRem(36), 5.5vw, pxToRem(70));
     font-style: italic;
     font-family: var(--ff-title);
 }
 
 .hero__text__title {
-    font-size: clamp(2.6rem, 1vw, 3.2rem);
-    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
+    font-size: clamp(pxToRem(26), 2.5vw, pxToRem(32));
+    margin-bottom: clamp(pxToRem(29), 3.3vw, pxToRem(42));
 }
 
 

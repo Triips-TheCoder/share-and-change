@@ -17,7 +17,7 @@ class CharitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create charity" do
     assert_difference("Charity.count") do
-      post charities_url, params: { charity: { adress: @charity.adress, city: @charity.city, country: @charity.country, description: @charity.description, email: @charity.email, logo: @charity.logo, name: @charity.name, phone: @charity.phone, website: @charity.website, zipcode: @charity.zipcode } }
+      post charities_url, params: { charity: { adress: @charity.adress, catchphrase: @charity.catchphrase, city: @charity.city, country: @charity.country, description: @charity.description, email: @charity.email, logo: @charity.logo, name: @charity.name, phone: @charity.phone, website: @charity.website, zipcode: @charity.zipcode } }
     end
 
     assert_redirected_to charity_url(Charity.last)
@@ -34,7 +34,7 @@ class CharitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update charity" do
-    patch charity_url(@charity), params: { charity: { adress: @charity.adress, city: @charity.city, country: @charity.country, description: @charity.description, email: @charity.email, logo: @charity.logo, name: @charity.name, phone: @charity.phone, website: @charity.website, zipcode: @charity.zipcode } }
+    patch charity_url(@charity), params: { charity: { adress: @charity.adress, catchphrase: @charity.catchphrase, city: @charity.city, country: @charity.country, description: @charity.description, email: @charity.email, logo: @charity.logo, name: @charity.name, phone: @charity.phone, website: @charity.website, zipcode: @charity.zipcode } }
     assert_redirected_to charity_url(@charity)
   end
 

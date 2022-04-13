@@ -2,8 +2,16 @@
    resources :capsules
    resources :charities
    resources :needs
-   get 'pages/quisommesnous'
+
    get 'home/index'
+   get 'pages/contact'
+   get 'pages/quisommesnous'
+   get 'pages/nosvideos'
+   get 'pages/lesaides'
+   get 'pages/cgu'
+   get 'pages/mentionslegales'
+   
+
    root 'home#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

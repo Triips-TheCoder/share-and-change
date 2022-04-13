@@ -1,5 +1,5 @@
 .logo {
-    width: clamp(7.9rem, 16.6%, 20rem);
+    width: clamp(pxToRem(79), 16.8%, pxToRem(200));
 }
 
 .logo img {

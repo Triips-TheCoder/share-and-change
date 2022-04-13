@@ -6,10 +6,10 @@
     justify-content: center;
     align-items: center;
     background-color: var(--black-variant);
-    padding: clamp(2.3rem, 3.4vw, 4.3rem) clamp(2rem, 3.1vw, 3.9rem);
+    padding: clamp(pxToRem(23), 3.4vw, pxToRem(43)) clamp(pxToRem(20), 3.1vw, pxToRem(39));
 
     &__logo {
-        margin-bottom: clamp(6rem, 13.4vw, 17rem);
+        margin-bottom: clamp(pxToRem(60), 13.4vw, pxToRem(170));
     }
 
     &__container {
@@ -38,7 +38,7 @@
     
     &__rights__links a,
     &__rights__links p {
-        font-size: clamp(0.8rem, 1.6vw, 2rem);
+        font-size: clamp(pxToRem(8), 1.6vw, pxToRem(20));
     }
 
     &__rights__links:nth-child(2) {
@@ -50,7 +50,7 @@
     }
 
     &__address {
-        margin-bottom: clamp(6.2rem, 12.8vw, 16.3rem);
+        margin-bottom: clamp(pxToRem(62), 12.8vw, pxToRem(163));
         //transform: translateY(-63%);
 
         &__mail {

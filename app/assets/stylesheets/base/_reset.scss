@@ -3,7 +3,8 @@
 }
 
 html {
-    font-size: 62.5%;
+    //font-size: 62.5%;
+    font-size: pxToRem(16);
 }
 
 main{
@@ -16,8 +17,8 @@ ul {
 }
 
 address {
- font-style: normal;
- text-align: right;
+    font-style: normal;
+    text-align: right;
 }
 
 a {

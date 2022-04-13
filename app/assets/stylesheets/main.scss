@@ -1,3 +1,4 @@
+@import 'abstracts/functions';
 @import 'abstracts/variables';
 
 @import 'base/normalize';
@@ -16,5 +17,10 @@
 @import 'layout/footer';
 @import 'layout/navigation';
 
+@import 'pages/cgu';
+@import 'pages/contact';
 @import 'pages/home';
+@import 'pages/lesaides';
+@import 'pages/mentionslegales';
+@import 'pages/nosvideos';
 @import 'pages/quisommesnous';
