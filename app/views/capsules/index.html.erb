@@ -1,5 +1,7 @@
 <h1>Les vidéos</h1>
 
-<% @capsules.each do |capsule| %>
-  <%= link_to capsule, capsule %>
-<% end %>
+<div class="capsules">
+    <% @capsules.each do |capsule| %>
+        <%= render capsule %>
+    <% end %>
+</div>

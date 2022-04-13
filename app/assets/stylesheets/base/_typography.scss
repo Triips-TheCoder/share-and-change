@@ -1,9 +1,3 @@
-
-
-h1 {
-    font-family: var(--ff-title);  
-}
-
 p, a, address {
     font-family: var(--ff-sans-serif);
     font-weight: var(--fw-400);
@@ -18,22 +12,25 @@ a, address {
 p {
     --min-p-font-size-rem : calc(var(--min-p-font-size) * var(--one-pixel-rem));
     --max-p-font-size-rem: calc(var(--max-p-font-size) * var(--one-pixel-rem));
-    --fluid-font-size-p-rem: calc( 
-    var(--slope-p) * (100vw - var(--min-vw-rem)) + var(--min-p-font-size-rem) 
-  );
-  font-size: clamp( 
-    var(--min-p-font-size-rem), 
-    var(--fluid-font-size-p-rem), 
-    var(--max-p-font-size-rem) 
-  ); 
+    --fluid-font-size-p-rem: calc(
+        var(--slope-p) * (100vw - var(--min-vw-rem)) + var(--min-p-font-size-rem)
+    );
+    font-size: clamp(
+        var(--min-p-font-size-rem),
+        var(--fluid-font-size-p-rem),
+        var(--max-p-font-size-rem)
+    );
 }
 
+
+// Headings
 h1 {
     --min-h1-font-size-rem: calc(var(--min-h1-font-size) * var(--one-pixel-rem));
     --max-h1-font-size-rem: calc(var(--max-h1-font-size) * var(--one-pixel-rem));
     --fluid-font-size-h1-rem: calc(
         var(--slope-h1) * (100vw - var(--min-vw-rem)) + var(--min-h1-font-size-rem)
     );
+    font-family: var(--ff-title);
     font-size: clamp(
         var(--min-h1-font-size-rem),
         var(--fluid-font-size-h1-rem),
@@ -50,7 +47,7 @@ h2 {
     font-size: clamp(
         var(--min-h2-font-size-rem),
         var(--fluid-font-size-h2-rem),
-        var(--max-h2-font-size-rem) 
+        var(--max-h2-font-size-rem)
     );
 }
 

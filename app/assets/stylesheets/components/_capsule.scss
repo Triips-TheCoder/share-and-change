@@ -1,5 +1,5 @@
 .capsule {
-    max-width: 260px;
+    max-width: 285px;
     div {
         border-radius: 10px;
         margin-bottom: var(--gutter);
@@ -7,6 +7,7 @@
         padding-top: 150%;
         position: relative;
         > * {
+            color: white;
             position: absolute;
         }
         img {
@@ -24,6 +25,7 @@
         blockquote {
             bottom: var(--gutter);
             left: var(--gutter);
+            margin: 0;
         }
     }
     h3 {
