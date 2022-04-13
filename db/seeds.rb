@@ -8,7 +8,10 @@
 
 alimentation = Need.where(name: 'Alimentation').first_or_create
 emploi = Need.where(name: 'Emploi').first_or_create
-formation = Need.where(name: '')
+formation = Need.where(name: 'Formation').first_or_create
+logement = Need.where(name: 'Logement').first_or_create
+adminstration = Need.where(name: 'Admnistration').first_or_create
+sante = Need.where(name: 'Santé').first_or_create
 
 secours_pop = Charity.where(name: 'Secours Populaire').first_or_create
 
