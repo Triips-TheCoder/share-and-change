@@ -1,9 +1,3 @@
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header__navigation {
     position: relative;
     display: flex;
@@ -39,34 +33,3 @@
     bottom: 0;
 }
 
-.header__wrapper {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.header__text {
-    max-width: 75rem;
-    padding: 0 clamp(2.5rem, 4vw, 5rem);
-}
-
-.header__text__hello {
-    font-size: clamp(3.6rem, 5.5vw, 7rem);
-    font-style: italic;
-    font-family: var(--ff-title);
-}
-
-.header__text__title {
-    font-size: clamp(2.6rem, 1vw, 3.2rem);
-    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
-}
-
-.font-logo {
-    font-family: "Blatant";
-}
-
-@media (max-width: 1050px) {
-    .header__image {
-        display: none;
-    }
-}

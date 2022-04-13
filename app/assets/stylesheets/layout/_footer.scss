@@ -20,12 +20,6 @@
         height: 100%;
     } 
 
-    &__links a:first-child,
-    &__links a:nth-child(3) {
-        display: inline-block;
-        margin-bottom: clamp(1.4rem, 3.9vw, 4.9rem);
-    }
-
     &__contact {
         font-weight: var(--fw-700);
         font-family: var(--ff-title);

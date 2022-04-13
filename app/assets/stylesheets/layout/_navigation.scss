@@ -6,3 +6,9 @@
     width: 200%;
     height: 200%;
 }
+
+nav a:first-child,
+nav a:nth-child(3) {
+    display: inline-block;
+    margin-bottom: clamp(1.4rem, 3.9vw, 4.9rem);
+}
