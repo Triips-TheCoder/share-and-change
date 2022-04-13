@@ -1,6 +1,9 @@
 .capsule {
+    max-width: 260px;
     div {
+        border-radius: 10px;
         margin-bottom: var(--gutter);
+        overflow: hidden;
         padding-top: 150%;
         position: relative;
         > * {
