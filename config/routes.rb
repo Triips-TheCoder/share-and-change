@@ -1,4 +1,5 @@
  Rails.application.routes.draw do
+   resources :capsules
    resources :charities
    resources :needs
    get 'pages/quisommesnous'

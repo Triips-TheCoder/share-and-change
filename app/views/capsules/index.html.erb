@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Capsules</h1>
+
+<div id="capsules">
+  <% @capsules.each do |capsule| %>
+    <%= render capsule %>
+    <p>
+      <%= link_to "Show this capsule", capsule %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New capsule", new_capsule_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @capsule %>
+
+<div>
+  <%= link_to "Edit this capsule", edit_capsule_path(@capsule) %> |
+  <%= link_to "Back to capsules", capsules_path %>
+
+  <%= button_to "Destroy this capsule", @capsule, method: :delete %>
+</div>
