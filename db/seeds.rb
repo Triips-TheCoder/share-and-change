@@ -16,9 +16,17 @@ administration = Need.where(name: 'Administration').first_or_create
 sante = Need.where(name: 'Santé').first_or_create
 
 # Charities
-secours_pop = Charity.where(name: 'Secours Populaire').first_or_create
-secours_pop.description = "Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériel, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées."
-secours_pop.save
+secours_pop = Charity.where(name: 'Le secours populaire').first_or_create
+secours_pop.description = "Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériel, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées. "
+secours_pop.catchphrase = "Agir pour un monde plus juste et solidaire"
+secours_pop.phone = "+33 05 56 92 79 92"
+secours_pop.adress = "95 Quai de Paludate"
+secours_pop.website = "https://wwww.secourspopulaire.fr"
+secours_pop.country = "France"
+secours_pop.city = "Bordeaux"
+secours_pop.zipcode = "33800"
+secours_pop.logo = "/assets/png/Secours_populaire.png"
+secours_pop.save 
 
 singa = Charity.where(name: 'Singa').first_or_create
 singa.logo = "/assets/png/Singa.png"
@@ -69,6 +77,29 @@ la_colline.city = "Cenon"
 la_colline.zipcode = "33150"
 la_colline.save 
 
+lesgratuitsgirondesolidarite = Charity.where(name: "Les Gratuits Gironde Solidarité").first_or_create
+lesgratuitsgirondesolidarite.description = "Les gratuits gironde solidarité est une association qui a pour but d’organiser, coordonner, réaliser des actions et des gestes de solidarité auprès des personnes vivants dans la précarité et laissées à la rue à Bordeaux. Depuis plus de deux ans, les activités sont amenées par le biais d’un collectif. Cette association intercepte les échantillons promotionnels souvent gaspillés. De plus, elle récupère les produits d’hygiène, de thé, de café, soupes, cadeaux d’entreprises, d’événementiels, manifestation sportive. Ceci est disposé dans des boîtes à dons dans différents lieux en Gironde ou chez des particuliers. Par la suite, des kits sont reversés à des personnes en difficultés et laissées à la rue. Chaque semaine, deux distributions alimentaires, hygiène et vêtements sont organisés. "
+lesgratuitsgirondesolidarite.catchphrase = "Non au gaspillage, oui à la solidarité"
+lesgratuitsgirondesolidarite.adress = "67 Rue Montgolfier"
+lesgratuitsgirondesolidarite.website = "https://wwww.lesgratuits.org"
+lesgratuitsgirondesolidarite.country = "France"
+lesgratuitsgirondesolidarite.city = "Bordeaux"
+lesgratuitsgirondesolidarite.zipcode = "33000"
+lesgratuitsgirondesolidarite.logo = "/assets/png/Les_Gratuits_Gironde_Solidarite.png"
+lesgratuitsgirondesolidarite.save 
+
+csf = Charity.where(name: "La Confédération Syndicales des Familles").first_or_create
+csf.description = "La C.S.F est une association qui agit avec les familles dans les domaines du quotidien (consommation, logement, éducation, surendettement, loisirs). La C.S.F est reconnue et agréée comme organisation nationale de consommateurs siégeant dans différentes instances gestion."
+csf.catchphrase = "Une association qui agit avec les familles au quotidien "
+csf.phone = "+33 05 56 43 94 58"
+csf.adress = "Bât le France, 9 Rue Montgolfier C109"
+csf.website = "https://www.la-csf.org/"
+csf.country = "France"
+csf.city = "Mérignac"
+csf.zipcode = "33700"
+csf.logo = "/assets/png/csf.png"
+csf.save 
+
 #Capsule
 
 capsule = Capsule.where(charity: singa, need: emploi).first_or_create
@@ -85,6 +116,13 @@ capsuleMohammed.poster = '/assets/png/Mohammed.png'
 capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
 capsuleMohammed.save
 
+capsuleMohammed = Capsule.where(charity: lesgratuitsgirondesolidarite, need: alimentation).first_or_create
+capsuleMohammed.first_name = 'Mohammed'
+capsuleMohammed.video = '699429672'
+capsuleMohammed.poster = "/assets/png/Mohammed.png"
+capsuleMohammed.quote = "Je remercie Gratuits Solidarité pour tous ces gestes et pour leur solidarité envers les sans-abris"
+capsuleMohammed.save 
+
 capsuleThierno = Capsule.where(charity: donbosco, need: logement).first_or_create
 capsuleThierno.first_name = 'Thierno'
 capsuleThierno.video = '699359541'
@@ -97,4 +135,18 @@ capsuleEliverta.first_name = 'Éliverta'
 capsuleEliverta.video = '699364149'
 capsuleEliverta.poster = '/assets/png/Eliverta.png'
 capsuleEliverta.quote = "Pour s’intégrer, la chose la plus importante c’est la langue française"
+capsuleEliverta.save
+
+capsuleEliverta2 = Capsule.where(charity: secours_pop, need: logement).first_or_create
+capsuleEliverta2.first_name = 'Eliverta'
+capsuleEliverta2.video = '699370637'
+capsuleEliverta2.poster = '/assets/png/Eliverta.png'
+capsuleEliverta2.quote = "Secours Populaire aide les personnes en difficultés, pour le logement,..."
+capsuleEliverta2.save
+
+capsuleEliverta = Capsule.where(charity: csf , need: formation).first_or_create
+capsuleEliverta.first_name = 'Eliverta'
+capsuleEliverta.video = '699376672'
+capsuleEliverta.poster = '/assets/png/Eliverta.png'
+capsuleEliverta.quote = "L'association fait un grand travail pour toutes les démarches des papiers"
 capsuleEliverta.save
