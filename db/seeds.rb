@@ -74,9 +74,9 @@ capsuleMohammed.poster = '/assets/jpg/Mohammed.jpeg'
 capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
 capsuleMohammed.save
 
-capsuleThierno = Capsule.where(charity: dubosco, need: logement).first_or_create
+capsuleThierno = Capsule.where(charity: donbosco, need: logement).first_or_create
 capsuleThierno.first_name = 'Thierno'
-capsuleThierno.video = '699053679'
-capsuleThierno.poster = ''
-capsuleThierno.quote = "“Ils m'ont vraiment beaucoup aidé au niveau administratif, et accompagné dans tous les domaines.”"
+capsuleThierno.video = '699359541'
+capsuleThierno.poster = '/assets/png/Thierno.png'
+capsuleThierno.quote = "Ils m'ont vraiment beaucoup aidé au niveau administratif, et accompagné dans tous les domaines."
 capsuleThierno.save
