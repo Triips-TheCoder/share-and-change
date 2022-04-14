@@ -9,22 +9,38 @@
 
 <address>
   <ul>
+
+    <% if @charity.website %>
     <li>
-  
       site :
       <a target="_blank" href="<%= @charity.website %>" title="site de Singa France - lien externe"><%= @charity.website %></a>
     </li>
+    <% else %>
+    <% end %>
+
+    <%if @charity.phone %>
     <li>
       téléphone :
       <a href="tel:<%= @charity.phone%>"><%= @charity.phone%></a>
     </li>
+    <% else %>
+    <% end %>
+
+    <%if @charity.email %>
     <li>
       mail :
       <a href="mailto: <%=@charity.email%>"><%=@charity.email%></a>
     </li>
+    <% else %>
+    <% end %>
+
+     <%if @charity.adress %>
     <li>
       lieu : <%=@charity.adress%>, <%=@charity.zipcode%> <%=@charity.city%>
     </li>
+     <% else %>
+    <% end %>
+    
   </ul>
 </address>
 <% @charity.capsules.each do |capsule| %>
