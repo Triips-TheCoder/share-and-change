@@ -45,6 +45,18 @@ konexio.city = "Paris"
 konexio.zipcode = "75020"
 konexio.save
 
+donbosco = Charity.where(name: 'Don_Bosco').first_or_create
+donbosco.description = "Don Bosco est une association qui a vue le jour en 1945 sous la forme d’une société civile immobilière. Dès ses débuts, l’association abritait des jeunes victimes de la guerre et les “cas sociaux”. En 2009, l'Association s'ouvrait au champ de l'accueil du jeune enfant, sollicitée par des associations de parents gérant des équipements et qui expriment un besoin de soutien afin de pérenniser leur activité. Don Bosco y répond favorablement, consciente que ce secteur est un réel espace de prévention, d’accompagnement à la parentalité, un outil d’insertion permettant l’accès au travail, en particulier pour les femmes. Aujourd’hui, Don Bosco est un véritable mouvement entrepreneurial. Organisé en Union d’Economie Sociale et Solidaire, elle poursuit, depuis son origine le même but, à savoir intervenir auprès des publics les plus défavorisés, de leur famille, de leur entourage pour répondre à des besoins sociaux identifiés, mais elle agit également avec un objectif de transformation sociale, pour participer à la construction d’une société plus inclusive."
+donbosco.catchphrase = "Plus qu'une association, un état d'esprit"
+donbosco.phone = "+33 02 98 30 35 40"
+donbosco.email = ""
+donbosco.adress = "Direction Générale et Siège Administratif Parc d’Innovation de Mescoat "
+donbosco.website = "https://www.donbosco.asso.fr/"
+donbosco.country = "France"
+donbosco.city = "Landerneau"
+donbosco.zipcode = "29800"
+donbosco.save
+
 #Capsule
 
 capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
@@ -61,3 +73,8 @@ capsuleMohammed.poster = '/assets/jpg/Mohammed.jpeg'
 capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
 capsuleMohammed.save
 
+capsuleThierno = Capsule.where(charity: dubosco, need: logement).first_or_create
+capsuleThierno.first_name = 'Thierno'
+capsuleThierno.video = '699053679'
+capsuleThierno.quote = "“Ils m'ont vraiment beaucoup aidé au niveau administratif, et accompagné dans tous les domaines.”"
+capsuleThierno.save
