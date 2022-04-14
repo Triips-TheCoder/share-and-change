@@ -1,24 +1,30 @@
 .hero__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .hero__content {
-    flex: 1;
     display: flex;
     justify-content: center;
+    margin-right: 2%;
+    width: 35%;
+}
+
+.hero__image {
+    width: 63%;
+    img {
+        max-width: 110%;
+    }
 }
 
 .hero__text {
     max-width: pxToRem(750);
-    padding: 0 clamp(pxToRem(25), 4vw, pxToRem(50));
+    padding-right: clamp(pxToRem(25), 4vw, pxToRem(50));
 }
 
 .hero__text__hello {
+    font-family: var(--ff-title);
     font-size: clamp(pxToRem(36), 5.5vw, pxToRem(70));
     font-style: italic;
-    font-family: var(--ff-title);
 }
 
 .hero__text__title {

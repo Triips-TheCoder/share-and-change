@@ -1,28 +1,33 @@
+<% if @charity.logo %>
+ <%= image_tag(@charity.logo) %>
+ <% else %>
+<% end %>
+
 <h1><%= @charity %></h1>
-<p>Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériel, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées.</p>
+<p><%= @charity.description%></p>
+
 
 <address>
   <ul>
     <li>
-    <%= @charity.description%>
+  
       site :
-      <a target="_blank" href="https://singafrance.com/" title="site de Singa France - lien externe">singafrance.com</a>
+      <a target="_blank" href="<%= @charity.website %>" title="site de Singa France - lien externe"><%= @charity.website %></a>
     </li>
     <li>
       téléphone :
-      <a href="tel:+08000000000">08 00 00 00 00</a>
+      <a href="tel:<%= @charity.phone%>"><%= @charity.phone%></a>
     </li>
     <li>
       mail :
-      <a href="mailto: contact@singa.fr">contact@singa.fr</a>
+      <a href="mailto: <%=@charity.email%>"><%=@charity.email%></a>
     </li>
     <li>
-      lieu : 8 Rue Leon Jouhaux, 33800 Bordeaux
+      lieu : <%=@charity.adress%>, <%=@charity.zipcode%> <%=@charity.city%>
     </li>
   </ul>
 </address>
 <% @charity.capsules.each do |capsule| %>
 
-<%= @charity.description %>
   <%= render capsule %>
 <% end %>

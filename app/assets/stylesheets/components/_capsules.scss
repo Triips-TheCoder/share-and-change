@@ -1,3 +1,6 @@
 .capsules {
     display: flex;
+    .capsule {
+        margin-right: var(--gutter);
+    }
 }
