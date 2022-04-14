@@ -1,0 +1,30 @@
+.last-testimonials {
+    h2 {
+        margin-top: pxToRem(160);
+    }
+
+}
+
+.last-testimonials + section {
+    h2 {
+        margin-top: pxToRem(190);
+    }
+}
+
+.home-title {
+    margin-bottom: pxToRem(51);
+
+    &:nth-of-type(2) p + div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &:nth-of-type(2) div > div {
+        flex-basis: 50%;
+    } 
+
+    &:nth-of-type(3) {
+        margin-top: pxToRem(160);
+    }
+}

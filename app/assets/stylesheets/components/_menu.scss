@@ -1,10 +1,26 @@
 .menu {
     display: none;
-    background-color: red;
+}
+
+.navigation-open .menu {
+    align-items: flex-end;
+    background-color: var(--white);
     bottom: 0;
+    display: flex;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
     z-index: var(--zindex-menu);
+    padding-bottom: 64px;
+
+    nav {
+        width: calc(100% - clamp(1.25rem, 11.1vw, 8.875rem));
+        margin: 0 auto;
+
+        li > a {
+            font-size: clamp(pxToRem(30), 4vw, pxToRem(50));
+        }
+    }
 }
+

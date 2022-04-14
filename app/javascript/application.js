@@ -1,3 +1,8 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
-import "controllers"
+const rootElement = document.documentElement
+const menuButton = document.querySelector('#menu-button')
+
+rootElement.addEventListener('click', openNavigation)
+
+function openNavigation() {
+    rootElement.classList.toggle('navigation-open')
+}
