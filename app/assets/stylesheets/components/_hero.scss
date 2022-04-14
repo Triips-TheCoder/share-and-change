@@ -26,6 +26,7 @@
 }
 
 .hero__text__title {
+    font-weight: 400;
     font-size: clamp(pxToRem(26), 2.5vw, pxToRem(32));
     margin-bottom: clamp(pxToRem(29), 3.3vw, pxToRem(42));
 }

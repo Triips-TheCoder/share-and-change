@@ -10,7 +10,7 @@
 
 .last-testimonials + section {
     h2 {
-        margin-top: pxToRem(190);
+        margin-top: pxToRem(120);
     }
 }
 
@@ -28,6 +28,18 @@
     } 
 
     &:nth-of-type(3) {
-        margin-top: pxToRem(160);
+        margin-top: pxToRem(120);
     }
+}
+
+.charities {
+    a > img {
+        height: auto; 
+        width: pxToRem(147);
+    }
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
 }
