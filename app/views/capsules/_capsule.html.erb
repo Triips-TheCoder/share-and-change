@@ -2,9 +2,8 @@
     <%= link_to capsule do %>
         <div>
             <%= image_tag capsule.poster, loading: "lazy", alt:"", width:"285" unless capsule.poster.blank? %>
-            <p>Voir la vidéo</p>
             <blockquote>
-              <p><%= capsule.quote %></p>
+              <p>&ldquo;<%= capsule.quote %>&rdquo;</p>
             </blockquote>
         </div>
         <figcaption>

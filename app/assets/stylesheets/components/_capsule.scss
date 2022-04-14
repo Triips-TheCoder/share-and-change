@@ -6,6 +6,17 @@
         overflow: hidden;
         padding-top: 150%;
         position: relative;
+
+        &::after {
+            bottom: 0; 
+            content: "";
+            left: 0;
+            position: absolute; 
+            right: 0;
+            top: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+        }
+
         > * {
             color: white;
             position: absolute;
@@ -25,6 +36,12 @@
         blockquote {
             bottom: var(--gutter);
             left: var(--gutter);
+            margin: 0;
+            z-index: var(--zindex-blockquote);
+        }
+
+        blockquote p {
+            font-family: var(--ff-title);
             margin: 0;
         }
     }
