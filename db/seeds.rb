@@ -35,18 +35,31 @@ singa.city = "Bordeaux"
 singa.zipcode = "33100"
 singa.save
 
+konexio = Charity.where(name: 'Konexio').first_or_create
+konexio.description = "Konexio c’est qui ? Et bien ce sont des migrants, des réfugiés, des expatriés, des locaux, des femmes, des hommes, des jeunes. Tous s’engagent avec ardeur dans l’inclusion numérique des personnes dévalorisés et vulnérables qui possèdent eux aussi un potentiel. Konexio s’engage dans de réels défis sociaux, culturels, éducatifs et professionnels dans lesquels leurs familles devaient faire face dès leurs arrivées dans de nouveaux pays. Encore aujourd’hui, il existe un faussé entre inclusion numérique et inclusion social. De ce fait, Konexio permet à des personnes étrangères et isolées du monde professionnel de concilier des compétences requises recherchées par les employeurs."
+konexio.catchphrase = "Les formations au numérique pour tous.tes."
+konexio.phone = " +33 7 66 38 74 96"
+konexio.email = "student@konexio.eu"
+konexio.adress = "15 Rue de la Réunion"
+konexio.website = "https://www.konexio.eu/index.html"
+konexio.country = "France"
+konexio.city = "Paris"
+konexio.zipcode = "75020"
+konexio.save
+
 #Capsule
 
 capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
 capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
-capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet"
+capsule.quote = "Il faut aller travailler avec l'association Singa pour faire grandir son projet"
 capsule.save
 
-capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
-capsule.first_name = 'Thierno'
-capsule.video = '699029249'
-capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
-capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet"
-capsule.save
+capsuleMohammed = Capsule.where(charity: konexio, need: formation).first_or_create
+capsuleMohammed.first_name = 'Mohammed'
+capsuleMohammed.video = '699093849'
+capsuleMohammed.poster = '/assets/jpg/Mohammed.jpeg'
+capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
+capsuleMohammed.save
+
