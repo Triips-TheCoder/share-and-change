@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-#Needs
+# Needs
 
 alimentation = Need.where(name: 'Alimentation').first_or_create
 emploi = Need.where(name: 'Emploi').first_or_create
@@ -15,7 +15,7 @@ logement = Need.where(name: 'Logement').first_or_create
 administration = Need.where(name: 'Administration').first_or_create
 sante = Need.where(name: 'Santé').first_or_create
 
-#Charities
+# Charities
 secours_pop = Charity.where(name: 'Secours Populaire').first_or_create
 secours_pop.description = "Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériel, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées."
 secours_pop.save
@@ -33,7 +33,7 @@ singa.city = "Bordeaux"
 singa.zipcode = "33100"
 singa.save
 
-#Capsule
+# Capsule
 capsule = Capsule.where(charity: singa, need: emploi).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
