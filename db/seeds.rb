@@ -34,7 +34,7 @@ singa.zipcode = "33100"
 singa.save
 
 #Capsule
-capsule = Capsule.where(charity: secours_pop, need: emploi).first_or_create
+capsule = Capsule.where(charity: singa, need: emploi).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
 capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
