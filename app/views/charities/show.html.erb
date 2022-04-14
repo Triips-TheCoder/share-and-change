@@ -1,5 +1,11 @@
+<% if @charity.logo %>
+ <%= image_tag(@charity.logo) %>
+ <% else %>
+<% end %>
+
 <h1><%= @charity %></h1>
 <p><%= @charity.description%></p>
+
 
 <address>
   <ul>

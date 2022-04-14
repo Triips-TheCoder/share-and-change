@@ -41,6 +41,10 @@
 
         <section>
             <h2>Chaque histoire mérite d’être partagée</h2>
+            <p>Nous apportons des solutions à chaque besoin.</p>
+            <% @needs.each do |need| %>
+            <%= render need %>
+            <% end %>
         </section>
 
         <section>

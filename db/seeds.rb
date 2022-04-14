@@ -23,6 +23,7 @@ secours_pop.save
 
 
 singa = Charity.where(name: 'Singa').first_or_create
+singa.logo = "/assets/png/Singa.png"
 singa.description = "“Créer la société de demain”, c’est ainsi que Singa crée une communauté autour de la diversité humaine. Que vous soyez réfugié, demandeur d’asile, une personne local ou bien immigrant, l’insertion social est à porté de main. Singa vous apporte de nombreuses ressources et opportunités dans le but de fonder un réel réseau culturel, professionnel ou encore dans la recherche de logement. Depuis sa création en 2012, les statistiques de Singa prouve que l’innovation social et culturel germe de la création des liens et des réfugiés."
 singa.catchphrase = "Les talents ne s’arrêtent pas aux frontières."
 singa.phone = "+33 6 17 80 24 55"
@@ -38,6 +39,13 @@ singa.save
 
 capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
 capsule.first_name = 'Alaa'
+capsule.video = '699029249'
+capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
+capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet"
+capsule.save
+
+capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
+capsule.first_name = 'Thierno'
 capsule.video = '699029249'
 capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
 capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet"
