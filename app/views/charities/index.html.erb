@@ -1,6 +1,9 @@
 <h1>Les associations</h1>
 
 <% @charities.each do |charity| %>
+<div class="charity_wrap">
   <%= link_to charity, charity %>
+  <p><%= charity.catchphrase%></p>
   <br/>
+  </div>
 <% end %>
