@@ -6,21 +6,19 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-#Needs
+# Needs
 
 alimentation = Need.where(name: 'Alimentation').first_or_create
 emploi = Need.where(name: 'Emploi').first_or_create
 formation = Need.where(name: 'Formation').first_or_create
 logement = Need.where(name: 'Logement').first_or_create
-adminstration = Need.where(name: 'Admnistration').first_or_create
+administration = Need.where(name: 'Administration').first_or_create
 sante = Need.where(name: 'Santé').first_or_create
 
-#Charities
-
+# Charities
 secours_pop = Charity.where(name: 'Secours Populaire').first_or_create
 secours_pop.description = "Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériel, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées."
 secours_pop.save
-
 
 singa = Charity.where(name: 'Singa').first_or_create
 singa.logo = "/assets/png/Singa.png"
@@ -35,12 +33,25 @@ singa.city = "Bordeaux"
 singa.zipcode = "33100"
 singa.save
 
+konexio = Charity.where(name: 'Konexio').first_or_create
+konexio.description = "Konexio c’est qui ? Et bien ce sont des migrants, des réfugiés, des expatriés, des locaux, des femmes, des hommes, des jeunes. Tous s’engagent avec ardeur dans l’inclusion numérique des personnes dévalorisés et vulnérables qui possèdent eux aussi un potentiel. Konexio s’engage dans de réels défis sociaux, culturels, éducatifs et professionnels dans lesquels leurs familles devaient faire face dès leurs arrivées dans de nouveaux pays. Encore aujourd’hui, il existe un faussé entre inclusion numérique et inclusion social. De ce fait, Konexio permet à des personnes étrangères et isolées du monde professionnel de concilier des compétences requises recherchées par les employeurs."
+konexio.catchphrase = "Les formations au numérique pour tous.tes."
+konexio.phone = " +33 7 66 38 74 96"
+konexio.email = "student@konexio.eu"
+konexio.adress = "15 Rue de la Réunion"
+konexio.website = "https://www.konexio.eu/index.html"
+konexio.country = "France"
+konexio.city = "Paris"
+konexio.zipcode = "75020"
+konexio.save
+
 #Capsule
 
 capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
 capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
+<<<<<<< HEAD
 capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet."
 capsule.save
 
@@ -50,3 +61,15 @@ capsule.video = '699029249'
 capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
 capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet."
 capsule.save
+=======
+capsule.quote = "Il faut aller travailler avec l'association Singa pour faire grandir son projet"
+capsule.save
+
+capsuleMohammed = Capsule.where(charity: konexio, need: formation).first_or_create
+capsuleMohammed.first_name = 'Mohammed'
+capsuleMohammed.video = '699093849'
+capsuleMohammed.poster = '/assets/jpg/Mohammed.jpeg'
+capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
+capsuleMohammed.save
+
+>>>>>>> 6a08777f4cc9a528ffb78db63673c905e80d1fe0
