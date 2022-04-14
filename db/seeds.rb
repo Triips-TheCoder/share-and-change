@@ -63,14 +63,14 @@ donbosco.save
 capsule = Capsule.where(charity: singa, need: emploi).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
-capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
+capsule.poster = '/assets/jpg/Alaa.jpg'
 capsule.quote = "Il faut aller travailler avec l'association Singa pour faire grandir son projet"
 capsule.save
 
 capsuleMohammed = Capsule.where(charity: konexio, need: formation).first_or_create
 capsuleMohammed.first_name = 'Mohammed'
 capsuleMohammed.video = '699093849'
-capsuleMohammed.poster = '/assets/jpg/Mohammed.jpeg'
+capsuleMohammed.poster = '/assets/png/Mohammed.png'
 capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
 capsuleMohammed.save
 
