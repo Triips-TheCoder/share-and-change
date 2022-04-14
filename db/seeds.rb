@@ -58,6 +58,17 @@ donbosco.city = "Landerneau"
 donbosco.zipcode = "29800"
 donbosco.save
 
+la_colline = Charity.where(name: 'La Colline').first_or_create
+la_colline.logo = "/assets/png/lacolline.png"
+la_colline.description = 'La colline est une association à Cenon. Le Centre social et culturel "La Colline", mène des projets sociaux, éducatifs et de loisirs avec les enfants, les jeunes et les familles. '
+la_colline.catchphrase = "Plus qu'une association, un état d'esprit"
+la_colline.phone = "+33 5 57 77 90 30"
+la_colline.adress = "2 rue Stéphane Mallarmé (Place François Mitterrand) "
+la_colline.country = "France"
+la_colline.city = "Cenon"
+la_colline.zipcode = "33150"
+la_colline.save 
+
 #Capsule
 
 capsule = Capsule.where(charity: singa, need: emploi).first_or_create
@@ -80,3 +91,10 @@ capsuleThierno.video = '699359541'
 capsuleThierno.poster = '/assets/png/Thierno.png'
 capsuleThierno.quote = "Ils m'ont vraiment beaucoup aidé au niveau administratif, et accompagné dans tous les domaines."
 capsuleThierno.save
+
+capsuleEliverta = Capsule.where(charity: la_colline, need: formation).first_or_create
+capsuleEliverta.first_name = 'Éliverta'
+capsuleEliverta.video = '699364149'
+capsuleEliverta.poster = '/assets/png/Eliverta.png'
+capsuleEliverta.quote = "Pour s’intégrer, la chose la plus importante c’est la langue française"
+capsuleEliverta.save
