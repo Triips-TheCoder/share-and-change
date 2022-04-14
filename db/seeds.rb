@@ -51,17 +51,6 @@ capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_creat
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
 capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
-<<<<<<< HEAD
-capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet."
-capsule.save
-
-capsule = Capsule.where(charity: secours_pop, need: alimentation).first_or_create
-capsule.first_name = 'Thierno'
-capsule.video = '699029249'
-capsule.poster = 'https://i.vimeocdn.com/video/1413371886-7bcc569ada7f4a9049463716c6915187139139d4d41a431d2923a5a43c33f932-d'
-capsule.quote = "Il faut aller travailler avec l'associtaion Singa pour faire grandir son projet."
-capsule.save
-=======
 capsule.quote = "Il faut aller travailler avec l'association Singa pour faire grandir son projet"
 capsule.save
 
@@ -72,4 +61,3 @@ capsuleMohammed.poster = '/assets/jpg/Mohammed.jpeg'
 capsuleMohammed.quote = "Aujourd'hui, je m'en sors beaucoup dans le numérique"
 capsuleMohammed.save
 
->>>>>>> 6a08777f4cc9a528ffb78db63673c905e80d1fe0
