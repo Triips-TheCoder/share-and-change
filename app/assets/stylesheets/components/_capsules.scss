@@ -1,6 +1,27 @@
 .capsules {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     .capsule {
         margin-right: var(--gutter);
+    }
+    
+
+    figcaption h3 {
+        margin-top: clamp(pxToRem(11), 4vw, pxToRem(49));
+        font-size: clamp(pxToRem(16), 2vw, pxToRem(25));
+    }
+
+    figcaption p {
+        margin: 0;
+    }
+
+    @media (max-width: 1050px) {
+        justify-content: center;
+
+        .capsule {
+            margin: 20px;
+        }
     }
 }

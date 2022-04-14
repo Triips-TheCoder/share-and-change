@@ -36,12 +36,11 @@
                 <%= render capsule %>
               <% end %>
             </div>
-            <%= link_to "Voir plus de témoignages", capsules_path %>
         </section>
 
         <section class="home-title">
             <h2>Chaque histoire mérite d’être partagée</h2>
-            <p class="text-align-right">Nous apportons des solutions à chaque besoin.</p>
+            <p>Nous apportons des solutions à chaque besoin.</p>
             <div>
               <% @needs.each do |need| %>
               <%= render need %>

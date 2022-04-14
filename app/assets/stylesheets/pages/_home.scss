@@ -1,8 +1,11 @@
 .last-testimonials {
     h2 {
-        margin-top: pxToRem(160);
-    }
+        margin-top:clamp(pxToRem(114), 12.5vw, pxToRem(160));
 
+        @media (max-width: 1050px) {
+            text-align: center;
+        }
+    }
 }
 
 .last-testimonials + section {
