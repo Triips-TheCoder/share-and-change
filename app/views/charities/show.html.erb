@@ -1,7 +1,9 @@
+<div class="charity-logo">
 <% if @charity.logo %>
  <%= image_tag(@charity.logo, class: "img_logo") %>
  <% else %>
 <% end %>
+</div>
 
 <h1><%= @charity %></h1>
 <p><%= @charity.description%></p>
