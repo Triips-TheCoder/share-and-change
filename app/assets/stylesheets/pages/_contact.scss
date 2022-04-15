@@ -19,11 +19,14 @@
 .contact_container_2_3 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .p_contact_container_2_3_bold{
     font-family: "Work Sans";
+    font-size: clamp(1.9rem, 1vw, 2.5rem);
     font-weight: 700;
+    margin-right: 3%;
 }
 
 .p_contact_container_2_3{
