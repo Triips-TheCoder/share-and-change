@@ -1,3 +1,56 @@
+.media {
+    margin-top: pxToRem(50);
+}
+
 .background-black {
     background-color: black;
+}
+
+.content {
+    font-family: var(--ff-title);
+    margin-bottom: pxToRem(77);
+
+    blockquote,
+    h1,
+    p {
+        margin: 0;
+    }
+
+    blockquote {
+        width: 80%;
+    }
+
+    blockquote h2 {
+        font-weight: 500;   
+        font-size: clamp(pxToRem(25), 4vw, pxToRem(50)); 
+        margin: pxToRem(81) 0 pxToRem(40) 0;
+    }
+    
+    img {
+        height: auto; 
+        width: pxToRem(62);
+    }
+    
+    p {
+        align-items: center;
+        display: flex;
+    }
+
+    h1 {
+        font-weight: 500;
+    }
+
+    & + p {
+        text-align: right;
+    }
+
+    & + p a {
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1050px) {
+    .media .background-black {
+        background-color: transparent;
+    }
 }
