@@ -45,7 +45,9 @@
 
         blockquote p {
             font-family: var(--ff-title);
+            font-size: clamp(pxToRem(14), 1.6vw, pxToRem(20));
             margin: 0;
+            width: 90%;
         }
     }
 
