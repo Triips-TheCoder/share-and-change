@@ -120,7 +120,7 @@ capsuleMohammed = Capsule.where(charity: lesgratuitsgirondesolidarite, need: ali
 capsuleMohammed.first_name = 'Mohammed'
 capsuleMohammed.video = '699429672'
 capsuleMohammed.poster = "/assets/png/Mohammed.png"
-capsuleMohammed.quote = "Je remercie Gratuits Solidarité pour tous ces gestes et pour leur solidarité envers les sans-abris"
+capsuleMohammed.quote = "Je remercie Gratuits Solidarité pour tous ces gestes"
 capsuleMohammed.save 
 
 capsuleThierno = Capsule.where(charity: donbosco, need: logement).first_or_create
