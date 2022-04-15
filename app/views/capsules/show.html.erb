@@ -7,9 +7,12 @@
 <section class="content">
   <blockquote><p><%= @capsule %></p></blockquote>
   <h1><%= @capsule.first_name %></h1>
-  <p>Nous parle de <%= @capsule.charity %></p>
+  <% if capsule.charity.logo %>
+  <p>Nous parle de <%= image_tag(capsule.charity.logo) %></p>
+  <% else %>
+  <p>Nous parle de <%= capsule.charity %></p>
+  <% end %>
 </section>
 
-<p><%= link_to @capsule.charity, @capsule.charity %></p>
-<p><%= link_to @capsule.need, @capsule.need %></p>
+<p><%= link_to "En savoir plus", @capsule.charity %></p>
 <script src="https://player.vimeo.com/api/player.js"></script>
