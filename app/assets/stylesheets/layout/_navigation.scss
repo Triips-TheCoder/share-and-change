@@ -10,5 +10,5 @@
 nav a:first-child,
 nav a:nth-child(3) {
     display: inline-block;
-    margin-bottom: clamp(pxToRem(14), 3.9vw, pxToRem(49));
+    margin-bottom: clamp(pxToRem(14), 3.9vw, pxToRem(32));
 }

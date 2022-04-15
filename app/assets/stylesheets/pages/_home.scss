@@ -28,7 +28,7 @@
     } 
 
     &:nth-of-type(3) {
-        margin-top: pxToRem(120);
+        margin: pxToRem(120) 0 pxToRem(160) 0;
     }
 }
 
