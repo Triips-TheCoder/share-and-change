@@ -7,10 +7,10 @@
 <section class="content">
   <blockquote><p><%= @capsule %></p></blockquote>
   <h1><%= @capsule.first_name %></h1>
-  <% if capsule.charity.logo %>
-  <p>Nous parle de <%= image_tag(capsule.charity.logo) %></p>
+  <% if @capsule.charity.logo %>
+  <p>Nous parle de <%= image_tag(@capsule.charity.logo) %></p>
   <% else %>
-  <p>Nous parle de <%= capsule.charity %></p>
+  <p>Nous parle de <%= @capsule.charity %></p>
   <% end %>
 </section>
 
