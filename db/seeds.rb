@@ -106,21 +106,21 @@ capsule = Capsule.where(charity: singa, need: emploi).first_or_create
 capsule.first_name = 'Alaa'
 capsule.video = '699029249'
 capsule.poster = '/assets/jpg/Alaa.jpg'
-capsule.quote = "Il faut aller travailler avec l'association Singa pour faire grandir son projet"
+capsule.quote = "Il faut aller travailler avec l'association Singa pour faire grandir son projet."
 capsule.save
 
 capsuleMohammed = Capsule.where(charity: konexio, need: formation).first_or_create
 capsuleMohammed.first_name = 'Mohammed'
 capsuleMohammed.video = '699093849'
 capsuleMohammed.poster = '/assets/png/Mohammed.png'
-capsuleMohammed.quote = "Aujourd'hui, je m'en sors bien dans le numérique"
+capsuleMohammed.quote = "Aujourd'hui, je m'en sors bien dans le numérique."
 capsuleMohammed.save
 
 capsuleMohammed = Capsule.where(charity: lesgratuitsgirondesolidarite, need: alimentation).first_or_create
 capsuleMohammed.first_name = 'Mohammed'
 capsuleMohammed.video = '699429672'
 capsuleMohammed.poster = "/assets/png/Mohammed.png"
-capsuleMohammed.quote = "Je remercie Gratuits Solidarité pour tous ces gestes"
+capsuleMohammed.quote = "Je remercie Gratuits Solidarité pour tous ces gestes."
 capsuleMohammed.save 
 
 capsuleThierno = Capsule.where(charity: donbosco, need: logement).first_or_create
@@ -134,19 +134,19 @@ capsuleEliverta = Capsule.where(charity: la_colline, need: formation).first_or_c
 capsuleEliverta.first_name = 'Eliverta'
 capsuleEliverta.video = '699364149'
 capsuleEliverta.poster = '/assets/png/Eliverta.png'
-capsuleEliverta.quote = "Pour s’intégrer, la chose la plus importante c’est la langue française"
+capsuleEliverta.quote = "Pour s’intégrer, la chose la plus importante c’est la langue française."
 capsuleEliverta.save
 
 capsuleEliverta2 = Capsule.where(charity: secours_pop, need: logement).first_or_create
 capsuleEliverta2.first_name = 'Eliverta'
 capsuleEliverta2.video = '699370637'
 capsuleEliverta2.poster = '/assets/png/Eliverta.png'
-capsuleEliverta2.quote = "Secours Populaire aide les personnes en difficultés, pour le logement,..."
+capsuleEliverta2.quote = "Secours Populaire aide les personnes en difficultés, pour le logement..."
 capsuleEliverta2.save
 
 capsuleEliverta = Capsule.where(charity: csf , need: formation).first_or_create
 capsuleEliverta.first_name = 'Eliverta'
 capsuleEliverta.video = '699376672'
 capsuleEliverta.poster = '/assets/png/Eliverta.png'
-capsuleEliverta.quote = "L'association fait un grand travail pour toutes les démarches administratives"
+capsuleEliverta.quote = "L'association fait un grand travail pour toutes les démarches administratives."
 capsuleEliverta.save
