@@ -17,7 +17,7 @@ sante = Need.where(name: 'Santé').first_or_create
 
 # Charities
 secours_pop = Charity.where(name: 'Le secours populaire').first_or_create
-secours_pop.description = "Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériel, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées."
+secours_pop.description = "Le Secours Populaire est une association reconnue d’utilité publique “agir pour un monde plus juste et plus solidaire”. L’association permet ainsi de s’émanciper et trouver sa place de citoyen. Issu du peuple, animé par lui, le Secours populaire promeut une relation d’égal à égal véritablement unique et un accueil inconditionnel. Présent partout, au bout de la rue comme au bout du monde avec son réseau de partenaires, il valorise systématiquement l’initiative comme mode d’action. L’association est profondément décentralisée et chacun peut ainsi agir : actions d’urgence, actions dans la durée, accompagnement global, sur les plans matériels, alimentaire, médical, moral, juridique, de la formation, de l’insertion sociale et professionnelle, ainsi que de l’accès au droit, à la culture et aux loisirs, au numérique, etc. Bénévoles comme partenaires, entreprises et donateurs, adultes comme enfants dès le plus jeune âge… tout le monde est invité à passer à l’action, à s'émanciper, à vivre la solidarité jour après jour. Ancrant sa vision sur la volonté d’un monde plus solidaire, le Secours populaire s’abstient de tout clivage : il rassemble et crée du lien autour des valeurs partagées."
 secours_pop.catchphrase = "Agir pour un monde plus juste et solidaire"
 secours_pop.phone = "+33 05 56 92 79 92"
 secours_pop.adress = "95 Quai de Paludate"
@@ -30,7 +30,7 @@ secours_pop.save
 
 singa = Charity.where(name: 'Singa').first_or_create
 singa.logo = "/assets/png/Singa.png"
-singa.description = "Créer la société de demain”, c’est ainsi que Singa crée une communauté autour de la diversité humaine. Que vous soyez réfugié, demandeur d’asile, une personne locale ou bien immigrant, l’insertion sociale est à portée de main. Singa vous apporte de nombreuses ressources et opportunités dans le but de fonder un réel réseau culturel, professionnel ou encore dans la recherche de logement. Depuis sa création en 2012, les statistiques de Singa prouvent que l’innovation sociale et culturelle germe de la création des liens et des réfugiés."
+singa.description = "Créer la société de demain”, c’est ainsi que Singa crée une communauté autour de la diversité humaine. Que vous soyez réfugié, demandeur d’asile, une personne locale ou bien immigrant, l’insertion sociale est à portée de main. Singa vous apportent de nombreuses ressources et opportunités dans le but de fonder un réel réseau culturel, professionnel ou encore dans la recherche de logement. Depuis sa création en 2012, les statistiques de Singa prouvent que l’innovation sociale et culturel germe de la création des liens et des réfugiés."
 singa.catchphrase = "Les talents ne s’arrêtent pas aux frontières."
 singa.phone = "+33 6 17 80 24 55"
 singa.email = "contact@singa.fr"
@@ -42,7 +42,7 @@ singa.zipcode = "33100"
 singa.save
 
 konexio = Charity.where(name: 'Konexio').first_or_create
-konexio.description = "Konexio, c’est qui ? Et bien, ce sont des migrants, des réfugiés, des expatriés, des locaux, des femmes, des hommes, des jeunes. Tous s’engagent avec ardeur dans l’inclusion numérique des personnes dévalorisées et vulnérables qui possèdent eux aussi un potentiel. Konexio s’engage dans de réels défis sociaux, culturels, éducatifs et professionnels dans lesquels leurs familles devaient faire face dès leurs arrivées dans de nouveaux pays. Encore aujourd’hui, il existe un faussé entre inclusion numérique et inclusion sociale. De ce fait, Konexio permet à des personnes étrangères et isolées du monde professionnel de concilier des compétences requises recherchées par les employeurs."
+konexio.description = "Konexio, c’est qui ? Eh bien, ce sont des migrants, des réfugiés, des expatriés, des locaux, des femmes, des hommes, des jeunes. Tous s’engagent avec ardeur dans l’inclusion numérique des personnes dévalorisées et vulnérables qui possèdent eux aussi un potentiel. Konexio s’engage dans de réels défis sociaux, culturels, éducatifs et professionnels dans lesquels leurs familles devaient faire face dès leurs arrivées dans de nouveaux pays. Encore aujourd’hui, il existe un faussé entre inclusion numérique et inclusion sociale. De ce fait, Konexio permet à des personnes étrangères et isolées du monde professionnel de concilier des compétences requises recherchées par les employeurs."
 konexio.logo = "/assets/png/Konexio.png"
 konexio.catchphrase = "Les formations au numérique pour tous.tes."
 konexio.phone = " +33 7 66 38 74 96"
@@ -78,7 +78,7 @@ la_colline.zipcode = "33150"
 la_colline.save 
 
 lesgratuitsgirondesolidarite = Charity.where(name: "Les Gratuits Gironde Solidarité").first_or_create
-lesgratuitsgirondesolidarite.description = "Les gratuits gironde solidarité est une association qui a pour but d’organiser, coordonner, réaliser des actions et des gestes de solidarité auprès des personnes vivantes dans la précarité et laissées à la rue à Bordeaux. Depuis plus de deux ans, les activités sont amenées par le biais d’un collectif. Cette association intercepte les échantillons promotionnels souvent gaspillés. De plus, elle récupère les produits d’hygiène, de thé, de café, soupes, cadeaux d’entreprises, d’événementiels, manifestation sportive. Ceci est disposé dans des boîtes à dons dans différents lieux en Gironde ou chez des particuliers. Par la suite, des kits sont reversés à des personnes en difficultés et laissés à la rue. Chaque semaine, deux distributions alimentaires, hygiène et vêtements sont organisés."
+lesgratuitsgirondesolidarite.description = "Les gratuites girondes solidarités est une association qui a pour but d’organiser, coordonner, réaliser des actions et des gestes de solidarité auprès des personnes vivantes dans la précarité et laisser à la rue à Bordeaux. Depuis plus de deux ans, les activités sont amenées par le biais d’un collectif. Cette association intercepte les échantillons promotionnels souvent gaspillés. De plus, elle récupère les produits d’hygiène, de thé, de café, soupes, cadeaux d’entreprises, d’événementiels, manifestation sportive. Ceci est disposé dans des boîtes à dons dans différents lieux en Gironde ou chez des particuliers. Par la suite, des kits sont reversés à des personnes en difficultés et laissés à la rue. Chaque semaine, deux distributions alimentaires, hygiène et vêtements sont organisés."
 lesgratuitsgirondesolidarite.catchphrase = "Non au gaspillage, oui à la solidarité"
 lesgratuitsgirondesolidarite.adress = "67 Rue Montgolfier"
 lesgratuitsgirondesolidarite.website = "https://wwww.lesgratuits.org"
@@ -141,7 +141,7 @@ capsuleEliverta2 = Capsule.where(charity: secours_pop, need: logement).first_or_
 capsuleEliverta2.first_name = 'Eliverta'
 capsuleEliverta2.video = '699370637'
 capsuleEliverta2.poster = '/assets/png/Eliverta.png'
-capsuleEliverta2.quote = "Secours Populaire aide les personnes en difficultés, pour le logement,..."
+capsuleEliverta2.quote = "Secours Populaire aide les personnes en difficultés, pour le logement"
 capsuleEliverta2.save
 
 capsuleEliverta = Capsule.where(charity: csf , need: formation).first_or_create
