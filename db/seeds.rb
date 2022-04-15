@@ -148,5 +148,5 @@ capsuleEliverta = Capsule.where(charity: csf , need: formation).first_or_create
 capsuleEliverta.first_name = 'Eliverta'
 capsuleEliverta.video = '699376672'
 capsuleEliverta.poster = '/assets/png/Eliverta.png'
-capsuleEliverta.quote = "L'association fait un grand travail pour toutes les démarches des papiers"
+capsuleEliverta.quote = "L'association fait un grand travail pour toutes les démarches administratives"
 capsuleEliverta.save
