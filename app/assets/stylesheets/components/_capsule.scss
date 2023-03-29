@@ -1,5 +1,8 @@
 .capsule {
     width: 285px;  
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem) ;
+    margin-right: var(--gutter);
+
 
     div {
         border-radius: 10px;

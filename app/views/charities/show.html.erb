@@ -48,9 +48,11 @@
 
 <%if @charity.capsules %>
 <p class="title_link_capsule">Ils en parlent aussi</p>
+<div class="capsules">
 <% @charity.capsules.each do |capsule| %>
   <%= render capsule %>
 <% end %>
+</div>
 <% else %>
 <% end %>
 

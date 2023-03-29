@@ -1,5 +1,6 @@
 .quisommesnous
 {
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
 
 &__container {
     display: flex;
@@ -15,6 +16,7 @@
 
 &__wrapper__left{
     align-items: flex-start;
+    margin: clamp(2.9rem, 3.3vw, 4.2rem) auto;
 
 }
 
