@@ -1,11 +1,10 @@
-<h1>Editing capsule</h1>
+<h1>Modifier les informations de la capsule</h1>
 
 <%= render "form", capsule: @capsule %>
 
 <br>
 
 <div>
-  <%= link_to "Show this capsule", @capsule %> |
-  <%= link_to "Back to capsules", capsules_path %>
-  <%= button_to "Supprimer la vidéo", @capsule, method: :delete, class:"btn" %>
+  <%= link_to "Voir la capsule", @capsule %> 
+  <%= button_to "Supprimer la capsule", @capsule, method: :delete, class:"btn" %>
 </div>

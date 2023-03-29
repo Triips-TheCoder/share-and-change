@@ -1,10 +1,10 @@
-<h1>Editing need</h1>
+<h1>Modifier le nom du domaine</h1>
 
 <%= render "form", need: @need %>
 
 <br>
 
 <div>
-  <%= link_to "Show this need", @need %> |
-  <%= link_to "Back to needs", needs_path %>
+  <%= link_to "Voir le domaine", @need %> |
+  <%= button_to "Supprimer le domaine", @need, method: :delete, class:"btn" %>
 </div>
