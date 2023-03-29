@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :capsules, :charities, :needs
   get 'contact' => 'pages#contact', as: :contact
   get 'qui-sommes-nous' => 'pages#qui_sommes_nous', as: :qui_sommes_nous

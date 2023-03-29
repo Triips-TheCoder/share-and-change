@@ -1,6 +1,14 @@
 class CharitiesController < ApplicationController
   before_action :set_charity, only: %i[ show edit update destroy ]
 
+  before_action do
+    I18n.locale = :fr # Or whatever logic you use to choose.
+  end
+  
+  before_action :authenticate_admin!, only: %i[ edit update destroy ]
+
+  
+
   # GET /charities or /charities.json
   def index
     @charities = Charity.all

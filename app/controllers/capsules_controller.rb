@@ -1,6 +1,14 @@
 class CapsulesController < ApplicationController
   before_action :set_capsule, only: %i[ show edit update destroy ]
 
+  before_action do
+    I18n.locale = :fr 
+  end
+
+  before_action :authenticate_admin!, only: %i[ edit update destroy ]
+
+  
+
   # GET /capsules or /capsules.json
   def index
     @capsules = Capsule.all

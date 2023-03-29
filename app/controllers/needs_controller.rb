@@ -1,6 +1,12 @@
 class NeedsController < ApplicationController
   before_action :set_need, only: %i[ show edit update destroy ]
 
+  before_action do
+    I18n.locale = :fr # Or whatever logic you use to choose.
+  end
+  
+  before_action :authenticate_admin!, only: %i[ edit update destroy ]
+
   # GET /needs or /needs.json
   def index
     @needs = Need.all
