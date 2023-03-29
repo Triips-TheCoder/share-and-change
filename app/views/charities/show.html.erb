@@ -55,4 +55,7 @@
 </div>
 <% else %>
 <% end %>
-
+<% if admin_signed_in? %>
+<button class="btn"><%= link_to "Modifier les informations", edit_charity_path(@charity) %></button>
+<% else %>
+<% end %>
