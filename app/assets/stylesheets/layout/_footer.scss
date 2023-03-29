@@ -7,6 +7,7 @@
     align-items: center;
     background-color: var(--black-variant);
     padding: clamp(pxToRem(23), 3.4vw, pxToRem(43)) clamp(pxToRem(20), 3.1vw, pxToRem(39));
+
     
     a,
     address {
@@ -18,7 +19,7 @@
     }
     
     &__logo {
-        margin-bottom: clamp(pxToRem(60), 13.4vw, pxToRem(170));
+        margin-bottom: clamp(2.25rem, 5.4vw, 7.625rem);
     }
 
     &__container {
@@ -34,18 +35,30 @@
         //justify-content: space-between;
         width: 85%;
         margin: 0 auto;
+        margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
+
+        @media screen and (min-width:1025px){
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__contact {
         font-weight: var(--fw-700);
         font-family: var(--ff-title);
-    }
+        @media screen and (min-width:1025px){
+            display: flex;
+            align-items: flex-end;
+        }    }
 
     &__rights {
         display: flex;
         justify-content: space-between;
         opacity: 0.5;
         color: var(--white); 
+    }
+    &__rights p{
+        margin: 0;
     }
 
     &__rights a {
@@ -57,6 +70,7 @@
         font-size: clamp(pxToRem(8), 1.6vw, pxToRem(20));
     }
 
+
     &__rights__links:nth-child(2) {
         text-align: center;
 
@@ -66,7 +80,7 @@
     }
 
     &__address {
-        margin-bottom: clamp(pxToRem(62), 12.8vw, pxToRem(163));
+        // margin-bottom: clamp(pxToRem(62), 12.8vw, pxToRem(163));
         //transform: translateY(-63%);
 
         &__mail {
