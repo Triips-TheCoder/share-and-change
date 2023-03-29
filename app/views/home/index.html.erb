@@ -7,19 +7,16 @@
                     <div class="hero__text">
                         <p class="hero__text__hello">Bienvenue!</p>
                         <h1 class="hero__text__title">
-                          Sur <span class="font-logo">share&change</span>,
-                          te faciliter la vie est notre priorité.
+                          Découvrez <span class="font-logo">Share&Change</span>, la solution pour les réfugiés par les réfugiés !
                         </h1>
-                        <p>C’est pour cela que nous
-                        nous engageons à trouver,
-                        une solution à ton besoin.
+                        <p>Share&Change est une plateforme qui met en avant des témoignages vidéos de nouveaux arrivants, tous racontent leur expérience vis-à-vis d’associations, d’entreprises, ou encore d’institutions qui leur sont venues en aide. 
                         </p>
                     </div>
                 </div>
                 <div class="hero__image">
                   <%= image_tag "jpg/desktop-header.jpg",
                                 alt:"",
-                                srcset:"/assets/jpeg@2x/desktop-header@2x.jpeg 2x" %>
+                                srcset:"/assets/jpg/desktop-header.jpg" %>
                 </div>
             </div>
         </section>
@@ -47,8 +44,8 @@
         </section>
 
         <section class="home-title">
-            <h2>Nous leur faisons confiance</h2>
-            <p>Nous travaillons en étroite collaboration avec des associations, organisations et entreprises mettant en œuvre des moyens pour accélérer et faciliter l’intégration des réfugiés à l’échelle régionale mais également nationale.</p>
+            <h2>En lien avec de nombreux acteurs de l’inclusion.</h2>
+            <p>Share&Change est en lien et en collaboration avec de nombreuses associations, organisations et entreprises qui facilitent et accélèrent l’intégration des réfugiés.</p>
             <div class="charities">
               <% @charities.each do |charity| %>
                 <%= link_to charity do %>
