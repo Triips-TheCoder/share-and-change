@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
+
+  def index_admin
+  end
+
   def qui_sommes_nous
   end
 

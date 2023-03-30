@@ -4,13 +4,13 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.association :charity %>
-    <%= f.association :need %>
-    <%= f.input :video %>
-    <%= f.input :quote %>
-    <%= f.input :poster %>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
+    <%= f.association :charity, label: "Nom de l'association" %>
+    <%= f.association :need, label: "Domaine" %>
+    <%= f.input :video, label: "Vidéo" %>
+    <%= f.input :quote, label: "Citation"%>
+    <%= f.input :poster, label: "Photo de couverture" %>
+    <%= f.input :first_name, label: "Nom de l'interviwé"%>
+    <%= f.input :last_name, label: "Prénom de l'interviwé"%>
   </div>
 
   <div class="form-actions">

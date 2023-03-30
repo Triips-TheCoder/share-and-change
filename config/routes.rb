@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'qui-sommes-nous' => 'pages#qui_sommes_nous', as: :qui_sommes_nous
   get 'cgu' => 'pages#cgu', as: :cgu
   get 'mentions-legales' => 'pages#mentions_legales', as: :mentions_legales
+  get 'index_admin' => 'pages#index_admin', as: :index_admin
   root 'home#index'
 end

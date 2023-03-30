@@ -4,3 +4,24 @@ button {
     padding: 0;
     cursor: pointer;
 }
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #B7B7B7;
+    border-color: #B7B7B7;
+    transition: all 0.15s ease-in-out;
+    margin-top: 2%;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #909090;
+    border-color: #909090;
+}

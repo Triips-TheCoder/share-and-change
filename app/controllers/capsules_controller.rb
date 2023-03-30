@@ -31,7 +31,7 @@ class CapsulesController < ApplicationController
 
     respond_to do |format|
       if @capsule.save
-        format.html { redirect_to capsule_url(@capsule), notice: "Capsule was successfully created." }
+        format.html { redirect_to capsule_url(@capsule), notice: "La capsule a été mise en ligne." }
         format.json { render :show, status: :created, location: @capsule }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -44,7 +44,7 @@ class CapsulesController < ApplicationController
   def update
     respond_to do |format|
       if @capsule.update(capsule_params)
-        format.html { redirect_to capsule_url(@capsule), notice: "Capsule was successfully updated." }
+        format.html { redirect_to capsule_url(@capsule), notice: "La capsule a été mise à jour." }
         format.json { render :show, status: :ok, location: @capsule }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -58,7 +58,7 @@ class CapsulesController < ApplicationController
     @capsule.destroy
 
     respond_to do |format|
-      format.html { redirect_to capsules_url, notice: "Capsule was successfully destroyed." }
+      format.html { redirect_to capsules_url, notice: "La capsule a été détruite." }
       format.json { head :no_content }
     end
   end
