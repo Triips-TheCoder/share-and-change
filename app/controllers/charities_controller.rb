@@ -7,7 +7,6 @@ class CharitiesController < ApplicationController
   
   before_action :authenticate_admin!, only: %i[ edit update destroy ]
 
-  
 
   # GET /charities or /charities.json
   def index

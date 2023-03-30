@@ -4,6 +4,12 @@
   </div>
 </section>
 
+<% if admin_signed_in? %>
+<button class="btn"><%= link_to "Modifier la capsule", edit_capsule_path(@capsule) %></button>
+<% else %>
+
+<% end %>
+
 <section class="content">
   <blockquote><h2>&ldquo;<%= @capsule %>&ldquo;</h2></blockquote>
   <h1><%= @capsule.first_name %></h1>
@@ -14,12 +20,6 @@
   <% end %>
 </section>
 
-
-<% if admin_signed_in? %>
-<button class="btn"><%= link_to "Modifier la capsule", edit_capsule_path(@capsule) %></button>
-<% else %>
-
-<% end %>
 
 <p><%= link_to "en savoir +", @capsule.charity %></p>
 <script src="https://player.vimeo.com/api/player.js"></script>
