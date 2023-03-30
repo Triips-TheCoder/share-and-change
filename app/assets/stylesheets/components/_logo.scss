@@ -1,5 +1,8 @@
 .logo {
     width: clamp(pxToRem(79), 16.8%, pxToRem(200));
+    &:after{
+        display: none;
+    }
 }
 
 .logo img {

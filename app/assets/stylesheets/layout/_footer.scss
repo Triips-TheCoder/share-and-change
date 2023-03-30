@@ -13,6 +13,30 @@
     address {
         color: var(--white);
     }
+    
+    a {
+        text-decoration: none;
+        position: relative;
+      color: #ffffff;
+        &:after{
+            content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      transform-origin: bottom right;
+      transition: transform 0.20s ease-out;
+      
+    }
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+        
+    }
 
     address {
         text-align: right;
@@ -79,22 +103,22 @@
         }
     }
 
-    &__address {
-        // margin-bottom: clamp(pxToRem(62), 12.8vw, pxToRem(163));
-        //transform: translateY(-63%);
+    // &__address {
+    //     // margin-bottom: clamp(pxToRem(62), 12.8vw, pxToRem(163));
+    //     //transform: translateY(-63%);
 
-        &__mail {
-            position: relative;
-        }
+    //     &__mail {
+    //         position: relative;
+    //     }
 
-        &__mail::after {
-            content: "";
-            position: absolute; 
-            bottom: 0;
-            left: 0;
-            background-color: var(--white);
-            height: 1px;
-            width: 100%;    
-        }
-    }
+    //     &__mail::after {
+    //         content: "";
+    //         position: absolute; 
+    //         bottom: 0;
+    //         left: 0;
+    //         background-color: var(--white);
+    //         height: 1px;
+    //         width: 100%;    
+    //     }
+    // }
 }

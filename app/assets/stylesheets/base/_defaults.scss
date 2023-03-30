@@ -18,7 +18,24 @@ address {
 
 a {
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+    position: relative;
+  color: #000;
+    &:after{
+        content: '';
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.20s ease-out;
+  
+}
+&:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+    
 }

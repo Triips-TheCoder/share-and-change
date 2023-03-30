@@ -2,9 +2,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem) ;
 
     .capsule {
         margin-right: var(--gutter);
+        
     }
     
 
