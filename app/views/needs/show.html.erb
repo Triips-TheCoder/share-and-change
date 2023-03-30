@@ -1,8 +1,11 @@
 <h1><%= @need %></h1>
 <div class="need_wrap">
+<%# <% if need.capsule %> 
 <% @need.capsules.each do |capsule| %>
 
   <%= render capsule %>
 
 <% end %>
+<%# <% else %>
+<%# <% end %>
 </div>

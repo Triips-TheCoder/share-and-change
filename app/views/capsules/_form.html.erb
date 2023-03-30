@@ -4,7 +4,7 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.association :charity, label: "Nom de l'association" %>
+    <%= f.association :charity, label: "Nom de l'organisme" %>
     <%= f.association :need, label: "Domaine" %>
     <%= f.input :video, label: "Vidéo" %>
     <%= f.input :quote, label: "Citation"%>

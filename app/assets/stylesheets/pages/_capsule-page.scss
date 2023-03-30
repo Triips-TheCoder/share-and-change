@@ -49,6 +49,15 @@
     }
 }
 
+.link_page{
+    text-align: right;
+    margin-top: pxToRem(50);
+    a{
+        font-weight: bold;  
+    }
+
+}
+
 @media (max-width: 1050px) {
     .media .background-black {
         background-color: transparent;
