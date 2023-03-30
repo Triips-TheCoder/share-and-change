@@ -5,7 +5,9 @@
 }
 
 .charities_div_a{
-    text-decoration: underline;
+    a::after{
+        display: none;
+    }
 
 }
 

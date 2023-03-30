@@ -1,7 +1,14 @@
+<h1>Vos besoins</h1>
+<div class="needs-container">
+<%= link_to "Toutes les vidéos", capsules_path %>  <% Need.all.each do |need| %>
+    <%= link_to need.name, capsules_path(need_id: need.id) %>
+  <% end %>
+</div>
+
 <h1>Les vidéos</h1>
 
 <div class="capsules">
-    <% @capsules.each do |capsule| %>
-        <%= render capsule %>
-    <% end %>
+  <% @capsules.each do |capsule| %>
+    <%= render capsule %>
+  <% end %>
 </div>

@@ -1,4 +1,5 @@
 .need{
+    
 }
 
 .need_wrap{
@@ -9,3 +10,17 @@
         justify-content: center;
     }
 }
+.needs-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    a{
+        margin: 10px 15px 0 0;
+    }
+  }
+
+ 
+.active{
+    font-weight: bold;
+    font-style: italic;
+    }

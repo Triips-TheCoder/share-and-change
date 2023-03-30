@@ -16,3 +16,18 @@ function openNavigation() {
 function toggleOpen() {
     return isOpen = !isOpen
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.needs-container a');
+    links.forEach(function(link) {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+      link.addEventListener('click', function(event) {
+        links.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        link.classList.add('active');
+      });
+    });
+  });

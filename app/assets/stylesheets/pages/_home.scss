@@ -40,6 +40,10 @@
 }
 
 .charities {
+    a::after{
+            display: none;
+        }
+    
     a > img {
         height: auto; 
         width: pxToRem(147);
