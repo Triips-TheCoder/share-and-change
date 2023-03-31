@@ -7,8 +7,12 @@
 
 <h1>Les témoignages</h1>
 <div class="capsules">
-  <% @capsules.each do |capsule| %>
-    <%= render capsule %>
+  <% if @capsules.any? %>
+    <% @capsules.each do |capsule| %>
+      <%= render capsule %>
+    <% end %>
+  <% else %>
+    <p>Bientôt de nouvelles vidéos pour la section "<%= @need %>"...</p>
   <% end %>
 </div>
 
@@ -16,4 +20,5 @@
     <p class="link_page"><%= link_to "+ ajouter une vidéo", new_capsule_path(@capsule) %></p>
 <% else %>
 <% end %>
+
 
