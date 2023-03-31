@@ -12,7 +12,7 @@ class CapsulesTest < ApplicationSystemTestCase
 
   test "should create capsule" do
     visit capsules_url
-    click_on "New capsule"
+    click_on "Nouvelle capsule"
 
     fill_in "Charity", with: @capsule.charity_id
     fill_in "First name", with: @capsule.first_name
@@ -21,7 +21,7 @@ class CapsulesTest < ApplicationSystemTestCase
     fill_in "Poster", with: @capsule.poster
     fill_in "Quote", with: @capsule.quote
     fill_in "Video", with: @capsule.video
-    click_on "Create Capsule"
+    click_on "Créer la capsule"
 
     assert_text "Capsule was successfully created"
     click_on "Back"
@@ -38,16 +38,16 @@ class CapsulesTest < ApplicationSystemTestCase
     fill_in "Poster", with: @capsule.poster
     fill_in "Quote", with: @capsule.quote
     fill_in "Video", with: @capsule.video
-    click_on "Update Capsule"
+    click_on "Mettre à jour la capsule"
 
-    assert_text "Capsule was successfully updated"
-    click_on "Back"
+    assert_text "La capsule a bien été mise à jour"
+    click_on "Retour"
   end
 
   test "should destroy Capsule" do
     visit capsule_url(@capsule)
-    click_on "Destroy this capsule", match: :first
+    click_on "Supprimer cette capsule", match: :first
 
-    assert_text "Capsule was successfully destroyed"
+    assert_text "La capsule a bien été mis à jour"
   end
 end

@@ -25,15 +25,15 @@ class CharitiesTest < ApplicationSystemTestCase
     fill_in "Phone", with: @charity.phone
     fill_in "Website", with: @charity.website
     fill_in "Zipcode", with: @charity.zipcode
-    click_on "Create Charity"
+    click_on "Créer l'aide"
 
-    assert_text "Charity was successfully created"
-    click_on "Back"
+    assert_text "L'aide a bien été créer"
+    click_on "Retour"
   end
 
   test "should update Charity" do
     visit charity_url(@charity)
-    click_on "Edit this charity", match: :first
+    click_on "Modifier cette aide", match: :first
 
     fill_in "Adress", with: @charity.adress
     fill_in "Catchphrase", with: @charity.catchphrase

@@ -5,19 +5,19 @@
 
   <div class="form-inputs">
     <%= f.input :logo %>
-    <%= f.input :catchphrase %>
+    <%= f.input :catchphrase, label:"Phrase d'accroche" %>
     <%= f.input :description %>
-    <%= f.input :phone %>
+    <%= f.input :phone, label:"Téléphone" %>
     <%= f.input :email %>
-    <%= f.input :website %>
-    <%= f.input :adress %>
-    <%= f.input :zipcode %>
-    <%= f.input :city %>
-    <%= f.input :country %>
-    <%= f.input :name %>
+    <%= f.input :website, label:"Site internet" %>
+    <%= f.input :adress, label:"Adresse" %>
+    <%= f.input :zipcode, label:"Code postale" %>
+    <%= f.input :city, label:"Ville" %>
+    <%= f.input :country, label:"Pays" %>
+    <%= f.input :name, label:"Nom" %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+  <%= f.button :submit, "Modifier l'aide" %>
   </div>
 <% end %>
