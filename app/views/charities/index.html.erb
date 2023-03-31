@@ -1,11 +1,12 @@
 <h1>Les aides</h1>
-
+<div class="all_charities">
 <% @charities.each do |charity| %>
 <div class="charities_div">
   <%= link_to charity, charity , class:"charities_div_a" %>
   <p class="charities_div_p"><%= charity.catchphrase%></p>
   </div>
 <% end %>
+</div>
 <% if admin_signed_in? %>
     <p class="link_page"><%= link_to "+ ajouter une aide", new_charity_path(@charity) %></p>
 <% else %>
