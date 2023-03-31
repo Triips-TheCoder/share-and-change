@@ -21,4 +21,7 @@
 
 .charities_div_p{
     text-align: end;
+    @media (max-width: 768px) {
+        text-align: left;
+    }
 }
