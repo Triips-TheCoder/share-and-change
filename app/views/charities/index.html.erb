@@ -6,3 +6,7 @@
   <p class="charities_div_p"><%= charity.catchphrase%></p>
   </div>
 <% end %>
+<% if admin_signed_in? %>
+    <p class="link_page"><%= link_to "+ ajouter un organisme", new_charity_path(@charity) %></p>
+<% else %>
+<% end %>

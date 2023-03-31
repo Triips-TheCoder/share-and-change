@@ -27,6 +27,10 @@
               <% @capsules.each do |capsule| %>
                 <%= render capsule %>
               <% end %>
+              <% if admin_signed_in? %>
+    <p class="link_page"><%= link_to "+ ajouter une vidéo", new_capsule_path(@capsule) %></p>
+<% else %>
+<% end %>
             </div>
         </section>
         <section class="home-title">
