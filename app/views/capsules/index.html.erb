@@ -5,8 +5,7 @@
   <% end %>
 </div>
 
-<h1>Les vidéos</h1>
-
+<h1>Les témoignages</h1>
 <div class="capsules">
   <% @capsules.each do |capsule| %>
     <%= render capsule %>
@@ -17,3 +16,4 @@
     <p class="link_page"><%= link_to "+ ajouter une vidéo", new_capsule_path(@capsule) %></p>
 <% else %>
 <% end %>
+
