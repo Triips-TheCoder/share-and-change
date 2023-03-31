@@ -10,7 +10,8 @@ class CapsulesController < ApplicationController
   # GET /capsules or /capsules.json
   def index
     if params[:need_id].present?
-      @capsules = Capsule.where(need_id: params[:need_id])
+      @need = Need.find(params[:need_id])
+      @capsules = @need.capsules
     else
       @capsules = Capsule.all
     end

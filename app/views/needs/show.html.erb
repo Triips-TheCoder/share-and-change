@@ -1,11 +1,9 @@
 <h1><%= @need %></h1>
 <div class="need_wrap">
-<%# <% if need.capsule %> 
-<% @need.capsules.each do |capsule| %>
-
-  <%= render capsule %>
-
-<% end %>
-<%# <% else %>
-<%# <% end %>
-</div>
+<% if @need.capsules.empty? %>
+  <p>Bientôt de nouvelles vidéos pour la section "<%= @need %>"...</p>
+<% else %>
+  <% @need.capsules.each do |capsule| %>
+    <%= render capsule %>
+  <% end %>
+<% end %></div>
