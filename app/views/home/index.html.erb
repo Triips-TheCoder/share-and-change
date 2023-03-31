@@ -44,18 +44,18 @@
         </section>
 
         <section class="home-title">
-            <h2>En lien avec de nombreux acteurs de l’inclusion.</h2>
-            <p>Share&Change est en lien et en collaboration avec de nombreuses associations, organisations et entreprises qui facilitent et accélèrent l’intégration des réfugiés.</p>
+            <h2>Remerciement à ceux qui ont fait confiance à Share&Change !</h2>
+            <p>Share&Change a pu voir le jour grâce à l’engagement de ses partenaires qui ont cru dans ce projet ambitieux. Leurs soutiens ont permis à Share&Change de se développer et de pouvoir faciliter et accélérer l’intégration des nouveaux arrivants en France.</p>
             <div class="charities">
-              <% @charities.each do |charity| %>
-                <%= link_to charity do %>
-                  <% if charity.logo %>
-                    <%= image_tag(charity.logo, alt: charity) %>
-                  <% else %>
-                    <%= charity %>
-                  <% end %>
-                <% end %>
-              <% end %>
+                <%= image_tag "png/namebay.png",
+                alt:"",
+                srcset:"/assets/png/namebay.png" %>
+                <%= image_tag "png/Singa.png",
+                alt:"",
+                srcset:"/assets/png/Singa.png" %>
+                <%= image_tag "png/Konexio.png",
+                alt:"",
+                srcset:"/assets/png/Konexio.png" %>
             </div>
         </section>
     </div>
