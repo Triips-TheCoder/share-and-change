@@ -18,6 +18,11 @@ button {
     border-color: #B7B7B7;
     transition: all 0.15s ease-in-out;
     margin-top: 2%;
+    a{
+        &::after{
+            display: none;
+        }
+    }
 }
 
 .btn:hover{

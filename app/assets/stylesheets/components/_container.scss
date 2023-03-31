@@ -4,6 +4,8 @@
     padding-left: var(--grid-gutter-width);
     padding-right: var(--grid-gutter-width);
     width: 100%;
+    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem) ;
+    
     @media (min-width: 576px) {
         max-width: 540px;
     }
