@@ -5,3 +5,12 @@ button {
     padding: 0;
     cursor: pointer;
 }
+
+.form-inputs * {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs{
+    border: red;
+}
