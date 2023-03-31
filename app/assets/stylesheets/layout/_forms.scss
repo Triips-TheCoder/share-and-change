@@ -13,12 +13,14 @@ button {
     
     textarea{
         resize: vertical;
-        padding: 10px 5px;    }
+        padding: 10px 5px;  
         transition: 0.2s;
         font-family: 'Work Sans';
+        min-height: 150px;
         &:focus{
             border-radius: 5px;
             border: 1px solid black;
+        }
             
         }
     }
