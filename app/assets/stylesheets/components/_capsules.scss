@@ -6,12 +6,10 @@
 
     .capsule {
         margin-right: var(--gutter);
-        
     }
     
 
     figcaption h3 {
-        margin-top: clamp(pxToRem(11), 4vw, pxToRem(49));
         font-size: clamp(pxToRem(16), 2vw, pxToRem(25));
     }
 
