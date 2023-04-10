@@ -44,10 +44,11 @@ background-color: transparent;
     font-size: pxToRem(20);
     margin: 0 2%;
     padding: 5px 10px;
-    color: #0000008b;
   }
   
 .pagination .current {
+    margin: 0 2%;
+    padding: 5px 10px;
     color: #000;
     font-size: pxToRem(24);
 

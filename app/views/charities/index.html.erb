@@ -17,7 +17,7 @@
     <% end %>
     </div>
   <% end %>
-  <%= will_paginate @charities %>
+  <%= will_paginate @charities, :previous_label => 'Précédent', :next_label => 'Suivant' %>
 
 </div>
 
