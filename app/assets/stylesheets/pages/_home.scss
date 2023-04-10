@@ -10,7 +10,7 @@
 
 .last-testimonials + section {
     h2 {
-        margin-top: pxToRem(120);
+        margin-top: pxToRem(10);
     }
 }
 
@@ -35,7 +35,7 @@
     } 
 
     &:nth-of-type(3) {
-        margin: pxToRem(120) 0 pxToRem(160) 0;
+        margin: pxToRem(60) 0 pxToRem(30) 0;
     }
 }
 
