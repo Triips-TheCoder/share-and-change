@@ -4,7 +4,7 @@
         <div class="footer__wrapper">
             <%= render 'nav'%>
             <% if admin_signed_in? %>
-<%= link_to "Déconnexion", destroy_admin_session_path, method: :delete %>
+<%= link_to "Déconnexion", destroy_admin_session_path, method: :delete, class:"logout_link" %>
 <% end %>
 
         </div>

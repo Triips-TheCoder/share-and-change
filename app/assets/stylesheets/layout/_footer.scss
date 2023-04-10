@@ -62,8 +62,8 @@
         margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
 
         @media screen and (min-width:1025px){
-            display: flex;
-            justify-content: space-between;
+            //display: flex;
+            //justify-content: space-between;
         }
     }
 
@@ -149,4 +149,12 @@
     transform-origin: bottom left;
   }
     }
+}
+.logout_link{
+    font-style: italic;
+    padding: 0;
+    &:after{
+  background-color: transparent
+  
+  }
 }
