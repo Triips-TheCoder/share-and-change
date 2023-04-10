@@ -3,6 +3,10 @@
         <%= image_tag("logo-white.svg", alt: "logo share and change en blanc", class:"logo footer__logo")%>
         <div class="footer__wrapper">
             <%= render 'nav'%>
+            <% if admin_signed_in? %>
+<%= link_to "Déconnexion", destroy_admin_session_path, method: :delete %>
+<% end %>
+
         </div>
         <!-- CGU  / Mention Legale -->
 

@@ -9,14 +9,18 @@
     flex-direction: column;
 }
 
-&__text__title {
-    font-size: clamp(2.2rem, 1vw, 3.2rem);
-    margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
+&__text__paragraph {
+margin-right: 40%;
+}
+
+&__text__subhead {
+font-weight: 500;
 }
 
 &__wrapper__left{
     align-items: flex-start;
     margin: clamp(2.9rem, 3.3vw, 4.2rem) auto;
+    font-weight: 300;
 
 }
 
@@ -24,6 +28,7 @@
 
     align-items: flex-end;
     text-align: end;
+    margin-left: 40%;
 }
 
 }

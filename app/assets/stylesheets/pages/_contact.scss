@@ -1,6 +1,7 @@
 
 .contact_container_1{
     display: flex;
+    flex-direction: column;
 }
 
 .contact_container_1_line{
@@ -9,6 +10,15 @@
     background-color: black;
     align-self: center;
     margin-right: 1%;
+}
+
+.contact_container_wrapper_1{
+    display: flex;
+}
+
+.p_contact_container_1{
+    font-family: "Work Sans";
+    font-weight: 600;
 }
 
 .a_contact_container_1{
@@ -22,20 +32,24 @@
     justify-content: space-between;
     align-items: center;
     margin: clamp(3.9rem, 4.3vw, 5.2rem) auto;
-
 }
 
 .p_contact_container_2_3_bold{
     font-family: "Work Sans";
-    font-size: clamp(1.9rem, 1vw, 2.5rem);
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 3%;
 }
 
 .p_contact_container_2_3{
     text-align: end;
-
 }
 
+.contact_container_4{
+    margin: clamp(3.9rem, 4.3vw, 5.2rem) auto;
+}
 
-
+.contact_container_wrapper_4{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
