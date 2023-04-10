@@ -7,14 +7,20 @@ class CharitiesController < ApplicationController
   
   before_action :authenticate_admin!, only: %i[ edit update destroy ]
 
+  add_breadcrumb "Accueil", :root_path
+
 
   # GET /charities or /charities.json
   def index
     @charities = Charity.all
+
+    add_breadcrumb "Nos aides", charities_path
   end
 
   # GET /charities/1 or /charities/1.json
   def show
+    add_breadcrumb "Nos aides", charities_path
+    add_breadcrumb @charity.name, charity_path(@charity)
   end
 
   # GET /charities/new

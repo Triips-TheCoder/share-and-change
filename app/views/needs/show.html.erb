@@ -1,3 +1,7 @@
+<div class="breadcrumb">
+<%= render_breadcrumbs :separator => ' > ' %>
+</div>
+
 <h1><%= @need %></h1>
 <div class="need_wrap">
 <% if @need.capsules.empty? %>

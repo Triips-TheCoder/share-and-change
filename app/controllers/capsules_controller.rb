@@ -8,6 +8,10 @@ class CapsulesController < ApplicationController
   before_action :authenticate_admin!, only: %i[ edit update destroy ]  
 
   # GET /capsules or /capsules.json
+
+  add_breadcrumb "Accueil", :root_path
+
+
   def index
     if params[:need_id].present?
       @need = Need.find(params[:need_id])
@@ -15,10 +19,15 @@ class CapsulesController < ApplicationController
     else
       @capsules = Capsule.all
     end
+
+    add_breadcrumb "Témoignages", capsules_path
+
   end
 
   # GET /capsules/1 or /capsules/1.json
   def show
+    add_breadcrumb "Témoignages", capsules_path
+    add_breadcrumb @capsule.first_name , capsule_path(@capsule)
   end
 
   # GET /capsules/new

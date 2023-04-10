@@ -7,13 +7,19 @@ class NeedsController < ApplicationController
   
   before_action :authenticate_admin!, only: %i[ edit update destroy ]
 
+  add_breadcrumb "Accueil", :root_path
+
   # GET /needs or /needs.json
   def index
     @needs = Need.all
+    add_breadcrumb "Besoins", needs_path
+
   end
 
   # GET /needs/1 or /needs/1.json
   def show
+    add_breadcrumb "Besoins", needs_path
+    add_breadcrumb @need.name, need_path(@need)
   end
 
   # GET /needs/new

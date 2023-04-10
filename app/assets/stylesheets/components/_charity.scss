@@ -13,3 +13,13 @@
     
 }
 
+.charity_header{
+    display: flex;
+    margin: clamp(3.9rem, 4.3vw, 5.2rem) auto;
+    justify-content: space-between;
+    margin-bottom: 7%;
+    &__title{
+        margin: 0;
+        align-self: center;
+    }
+}

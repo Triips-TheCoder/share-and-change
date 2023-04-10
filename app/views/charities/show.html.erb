@@ -1,11 +1,18 @@
-<div class="charity-logo">
-<% if @charity.logo %>
- <%= image_tag(@charity.logo, class: "img_logo") %>
- <% else %>
-<% end %>
+<div class="breadcrumb">
+<%= render_breadcrumbs :separator => ' > ' %>
 </div>
 
-<h1><%= @charity %></h1>
+<div class="charity_header">
+
+  <h2 class="charity_header__title"><%= @charity %></h2>
+    <div class="charity-logo">
+  <% if @charity.logo %>
+  <%= image_tag(@charity.logo, class: "img_logo") %>
+  <% else %>
+  <% end %>
+  </div>
+
+</div>
 <p><%= @charity.description%></p>
 
 
