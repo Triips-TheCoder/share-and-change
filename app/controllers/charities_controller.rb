@@ -12,9 +12,9 @@ class CharitiesController < ApplicationController
 
   # GET /charities or /charities.json
   def index
-    @charities = Charity.all
-
     add_breadcrumb "Nos aides", charities_path
+    @charities = Charity.paginate(page: params[:page], per_page: 6)
+
   end
 
   # GET /charities/1 or /charities/1.json

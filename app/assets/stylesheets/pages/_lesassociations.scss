@@ -32,3 +32,23 @@
 .charities_div_img::after{
 background-color: transparent;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.pagination a, .pagination span {
+    font-size: pxToRem(20);
+    margin: 0 2%;
+    padding: 5px 10px;
+    color: #0000008b;
+  }
+  
+.pagination .current {
+    color: #000;
+    font-size: pxToRem(24);
+
+  }
