@@ -8,9 +8,9 @@
         </div>
         <figcaption>
           <h3><%= capsule.first_name %></h3>
-          <% if capsule.charity.logo %>
-          <p>nous parle de <%= image_tag(capsule.charity.logo) %></p>
-          <% else %>
+          <% if capsule.charity.logo.url %>
+          <%= image_tag capsule.charity.logo.url %> 
+         <% else %>
           <p>nous parle de <%= capsule.charity %></p>
           <% end %>
         </figcaption>
