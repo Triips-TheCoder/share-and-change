@@ -60,11 +60,19 @@
         width: 85%;
         margin: 0 auto;
         margin-bottom: clamp(2.9rem, 3.3vw, 4.2rem);
+
+        @media screen and (max-width:1025px){
+            display: block;
+        } 
+
         &__right {
 
             p{
             color: #ffffff;
             margin-left: 1%;
+            @media screen and (max-width:1025px){
+                margin-left: 0%;
+            } 
         }
             &__image{
 
@@ -86,7 +94,8 @@
         @media screen and (min-width:1025px){
             display: flex;
             align-items: flex-end;
-        }    }
+        }    
+    }
 
     &__rights {
         display: flex;
