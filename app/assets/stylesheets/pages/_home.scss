@@ -58,3 +58,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.thanks_contact{
+    font-size: clamp(var(--min-p-font-size-rem), var(--fluid-font-size-p-rem), var(--max-p-font-size-rem));
+}
